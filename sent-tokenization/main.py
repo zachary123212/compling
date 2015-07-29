@@ -11,6 +11,15 @@ np.set_printoptions(threshold=np.nan)
 stopWords = open('stop-words.txt').read().split()
 
 def getLines(file):
+	"""
+	Args:
+		file: a corpus txt file with line breaks between sentences
+
+	Returns: 
+		a list of lists, each 1st level being sentences and 2nd-words, with removed stop words and all lowercase.
+		Example:
+			[['lorem', 'ipsum', 'dolor'], ['sit', 'consectetur', 'adipiscing'], ['elit']]
+	"""
 	lines = []
 	with open(file) as raw:
 		sents = raw.read().lower().splitlines()
@@ -25,6 +34,15 @@ def getLines(file):
 CORPUS = getLines('corpus.txt')
 
 def mima(MINORMAX, val, given):
+	"""
+	Args:
+		MINORMAX: determines whether function defines minimum or maximum
+		val: defines maximum or minimum value for given
+		given: input value to be compared with val
+
+	Returns:
+		given, constrained by minimum or maximum val
+	"""
 	if MINORMAX is 'min':
 		if given < val:
 			given = val
@@ -34,6 +52,15 @@ def mima(MINORMAX, val, given):
 	return given
 
 def getContext(word, data, windowSize):
+	"""
+	Args:
+		word: input word whose context is returned 
+		data: corpus from which context of word is retrieved
+		windowSize: window size (left and right) for obtaining of word context
+
+	Returns:
+		contexts, a default dictionary with default value 0, key: word, item: frequency of word in windowSize of data corpus
+	"""
 	# data = getLines(data_raw)
 	contexts = defaultdict(lambda: 0)
 	for line in range(0, len(data)):
@@ -46,16 +73,25 @@ def getContext(word, data, windowSize):
 	# return sorted(contexts.items(), key=operator.itemgetter(1), reverse=True)
 	return contexts
 
-def cosSim(data1, data2):
-	keys1=np.unique(np.array((data1,data2)).T[0])
-	keys2=np.unique(np.array((data1,data2)).T[1])
+def cosSim(contexts1, contexts2):
+	"""
+	Args:
+		contexts1: contexts of word to be compared with contexts of another word
+		contexts2: contexts of word to be compared with contexts of another word
+
+	Returns:
+		cosine distributional probability of two words
+		also outputs contexts arrays to serialized.txt
+	"""
+	keys1=np.unique(np.array((contexts1,contexts2)).T[0])
+	keys2=np.unique(np.array((contexts1,contexts2)).T[1])
 	
 	all_keys=np.sort(np.append(keys1, keys2))
 
 	# print all_keys
 
-	array1=np.array([[i,data1.get(i,0)] for i in all_keys])
-	array2=np.array([[i,data2.get(i,0)] for i in all_keys])
+	array1=np.array([[i,contexts1.get(i,0)] for i in all_keys])
+	array2=np.array([[i,contexts2.get(i,0)] for i in all_keys])
 
 	# print array1, "\n", array2
 
@@ -75,6 +111,15 @@ def cosSim(data1, data2):
 
 
 def wordCount(word, data):
+	"""
+	Args:
+		word: word whose frequency is to be returned
+		data: corpus in which word's frequency is gaged
+
+	Returns: 
+		if word is '\a', returns number of words in data
+		otherwise, returns frequency of word in data
+	"""
 	tmp = 0
 	for line in range(0, len(data)):
 		for i in range(0, len(data[line])):
@@ -84,18 +129,28 @@ def wordCount(word, data):
 				tmp += 1
 	return tmp
 
-def ppmi(data1, data2, word1, word2):
+def ppmi(contexts1, contexts2, word1, word2):
+	"""
+	Args:
+		contexts1: context dictionary of word 1
+		contexts2: context dictionary of word 2
+		word1: word to be compared
+		word2: word to be compared
+
+	Returns:
+		PPMI of word1, given word2
+	"""
 	wc = wordCount('\a', CORPUS)
 	# print wc
-	keys1=np.unique(np.array((data1,data2)).T[0])
-	keys2=np.unique(np.array((data1,data2)).T[1])
+	keys1=np.unique(np.array((contexts1,contexts2)).T[0])
+	keys2=np.unique(np.array((contexts1,contexts2)).T[1])
 	
 	all_keys=np.sort(np.append(keys1, keys2))
 
 	# print all_keys
 
-	array1=np.array([[i,data1.get(i,0)] for i in all_keys])
-	array2=np.array([[i,data2.get(i,0)] for i in all_keys])
+	array1=np.array([[i,contexts1.get(i,0)] for i in all_keys])
+	array2=np.array([[i,contexts2.get(i,0)] for i in all_keys])
 
 	# print array1, "\n", array2
 
@@ -126,12 +181,11 @@ def main(argv):
 	word1 = "man"
 	word2 = "business"
 
-	data1 = getContext(word1, CORPUS, WINDOW_SIZE)
-	data2 = getContext(word2, CORPUS, WINDOW_SIZE)
-	
-	# print cosSim(data1, data2)
-	print ppmi(data1, data2, word1, word2)
-	# print data1
+	contexts1 = getContext(word1, CORPUS, WINDOW_SIZE)
+	contexts2 = getContext(word2, CORPUS, WINDOW_SIZE)
+	# print cosSim(contexts1, contexts2)
+	print ppmi(contexts1, contexts2, word1, word2)
+	# print contexts1
 	# print wordCount('\a', CORPUS)
 
 if __name__ == "__main__":
