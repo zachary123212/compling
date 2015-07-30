@@ -10,6 +10,8 @@ np.set_printoptions(threshold=np.nan)
 
 stopWords = open('stop-words.txt').read().split()
 
+WINDOW_SIZE = 5
+
 def getLines(file):
 	"""
 	Args:
@@ -74,7 +76,7 @@ def getContext(word, data, windowSize):
 	# return sorted(contexts.items(), key=operator.itemgetter(1), reverse=True)
 	return contexts
 
-def cosSim(contexts1, contexts2):
+def cosSim(contexts1, contexts2, word1, word2):
 	"""
 	Args:
 		contexts1: contexts of word to be compared with contexts of another word
@@ -97,24 +99,28 @@ def cosSim(contexts1, contexts2):
 
 	# print all_keys
 
-	array1=np.array([[i,contexts1.get(i,0)] for i in all_keys])
-	array2=np.array([[i,contexts2.get(i,0)] for i in all_keys])
+	array1=np.array([[i,ppmi(contexts1, getContext(i, CORPUS, WINDOW_SIZE), word1, i)] for i in all_keys])
+	array2=np.array([[i,ppmi(contexts2, getContext(i, CORPUS, WINDOW_SIZE), word2, i)] for i in all_keys])
 
-	# print array1, "\n", array2
+	print contexts1, "\n", contexts2
+	print array1, "\n", array2
 
 	array1_i = np.array([i[1] for i in array1], dtype=float)
 	array2_i = np.array([i[1] for i in array2], dtype=float)
 
 	# print array1_i, "\n", array2_i
 
+	out = (np.dot(array1_i, array2_i))/(np.linalg.norm(array1_i)*np.linalg.norm(array2_i))
+
 	file1 = open('serialized.txt', 'w+')
 
 	file1.write('Word 1 Frequencies:\n' + np.array_repr(array1) + '\nVector:\n' +  np.array_repr(array1_i))
 	file1.write('\n\nWord 2 Frequencies:\n' + np.array_repr(array2) + '\nVector:\n' +  np.array_repr(array2_i))
+	file1.write('\n\n' + np.array_repr(out))
 
 	file1.close()
 
-	return (np.dot(array1_i, array2_i))/(np.linalg.norm(array1_i)*np.linalg.norm(array2_i))
+	return out
 
 
 def wordCount(word, data):
@@ -152,7 +158,7 @@ def ppmi(contexts1, contexts2, word1, word2):
 	keys1=np.unique(np.array((contexts1,contexts2)).T[0])
 	keys2=np.unique(np.array((contexts1,contexts2)).T[1])
 	
-	all_keys=np.sort(np.append(keys1, keys2))
+	all_keys=np.sort(np.unique(np.append(keys1, keys2)))
 
 	# print all_keys
 
@@ -173,7 +179,7 @@ def ppmi(contexts1, contexts2, word1, word2):
 
 	# print array2
 
-	# print array2_i[np.searchsorted(all_keys, word1)]*wc
+	# print array2_i[np.searchsorted(all_keys, word1)]
 	# print ((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS)))
 	# print wordCount(word1, CORPUS)
 	# print wc
@@ -189,15 +195,16 @@ def ppmi(contexts1, contexts2, word1, word2):
 
 def main(argv):
 
-	WINDOW_SIZE = 5
-
-	word1 = "dog"
-	word2 = "man"
+	word1 = "city"
+	word2 = "london"
 
 	contexts1 = getContext(word1, CORPUS, WINDOW_SIZE)
 	contexts2 = getContext(word2, CORPUS, WINDOW_SIZE)
 	
-	print cosSim(contexts1, contexts2)
+	print cosSim(contexts1, contexts2, word1, word2)
+
+	# print ppmi(getContext('', CORPUS, WINDOW_SIZE), getContext('dog', CORPUS, WINDOW_SIZE), 'cat', 'dog')
+
 	# print ppmi(contexts1, contexts2, word1, word2)
 	# print contexts1
 	# print wordCount('\a', CORPUS)
