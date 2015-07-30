@@ -69,6 +69,7 @@ def getContext(word, data, windowSize):
 			for i in range(mima('min', 0, data[line].index(word)-windowSize), mima('max', len(data[line]), data[line].index(word)+windowSize + 1)):
 				# print data[line][i]
 				if data[line][i] not in stopWords and data[line][i] != word:
+					# contexts[data[line][i]] += 1
 					contexts[data[line][i]] += 1
 	# return sorted(contexts.items(), key=operator.itemgetter(1), reverse=True)
 	return contexts
@@ -85,8 +86,14 @@ def cosSim(contexts1, contexts2):
 	"""
 	keys1=np.unique(np.array((contexts1,contexts2)).T[0])
 	keys2=np.unique(np.array((contexts1,contexts2)).T[1])
-	
-	all_keys=np.sort(np.append(keys1, keys2))
+
+	# all_keys=None
+
+	# for key in range(0, len(keys2)):
+	# 	if keys2[key] not in all_keys:
+	# 		np.append(all_keys, keys2)
+
+	all_keys=np.sort(np.unique(np.append(keys1, keys2)))
 
 	# print all_keys
 
@@ -158,16 +165,16 @@ def ppmi(contexts1, contexts2, word1, word2):
 	array2_i = np.array([i[1] for i in array2], dtype=float)
 
 	# print array2_i[np.searchsorted(all_keys, word1)]
-	print array1
+	# print array1
 
 	# print array2_i[np.searchsorted(all_keys, word1)], "/", wc
 	# print wordCount(word1, CORPUS), "/", wc
 	# print wordCount(word2, CORPUS), "/", wc
 
-	print array2_i[np.searchsorted(all_keys, word1)]*wc
-	print ((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS)))
+	# print array2_i[np.searchsorted(all_keys, word1)]*wc
+	# print ((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS)))
 	# print wordCount(word1, CORPUS)/
-	print wc
+	# print wc
 	out = math.log((array2_i[np.searchsorted(all_keys, word1)]*wc)/((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS))), 2)
 
 	if out < 0:
@@ -176,15 +183,16 @@ def ppmi(contexts1, contexts2, word1, word2):
 
 def main(argv):
 
-	WINDOW_SIZE = 4
+	WINDOW_SIZE = 5
 
 	word1 = "man"
-	word2 = "business"
+	word2 = "woman"
 
 	contexts1 = getContext(word1, CORPUS, WINDOW_SIZE)
 	contexts2 = getContext(word2, CORPUS, WINDOW_SIZE)
 	# print cosSim(contexts1, contexts2)
-	print ppmi(contexts1, contexts2, word1, word2)
+	# print ppmi(contexts1, contexts2, word1, word2)
+	print cosSim(contexts1, contexts2)
 	# print contexts1
 	# print wordCount('\a', CORPUS)
 
