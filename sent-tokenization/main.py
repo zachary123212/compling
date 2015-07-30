@@ -171,10 +171,16 @@ def ppmi(contexts1, contexts2, word1, word2):
 	# print wordCount(word1, CORPUS), "/", wc
 	# print wordCount(word2, CORPUS), "/", wc
 
+	# print array2
+
 	# print array2_i[np.searchsorted(all_keys, word1)]*wc
 	# print ((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS)))
-	# print wordCount(word1, CORPUS)/
+	# print wordCount(word1, CORPUS)
 	# print wc
+
+	if array2_i[np.searchsorted(all_keys, word1)]*wc == 0:
+		return 0
+
 	out = math.log((array2_i[np.searchsorted(all_keys, word1)]*wc)/((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS))), 2)
 
 	if out < 0:
@@ -185,14 +191,14 @@ def main(argv):
 
 	WINDOW_SIZE = 5
 
-	word1 = "man"
-	word2 = "woman"
+	word1 = "dog"
+	word2 = "man"
 
 	contexts1 = getContext(word1, CORPUS, WINDOW_SIZE)
 	contexts2 = getContext(word2, CORPUS, WINDOW_SIZE)
-	# print cosSim(contexts1, contexts2)
-	# print ppmi(contexts1, contexts2, word1, word2)
+	
 	print cosSim(contexts1, contexts2)
+	# print ppmi(contexts1, contexts2, word1, word2)
 	# print contexts1
 	# print wordCount('\a', CORPUS)
 
