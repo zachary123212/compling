@@ -10,7 +10,7 @@ np.set_printoptions(threshold=np.nan)
 
 stopWords = open('stop-words.txt').read().split()
 
-WINDOW_SIZE = 5
+WINDOW_SIZE = 4
 
 def getLines(file):
 	"""
@@ -28,7 +28,13 @@ def getLines(file):
 	for sent in range(0, len(sents)):
 		exclude = set(string.punctuation)
 		sents[sent] = ''.join(ch for ch in sents[sent] if ch not in exclude)
-		lines.append(sents[sent].split())
+		words = sents[sent].split()
+		wordsR = []
+		for word in words:
+			if word not in stopWords:
+				wordsR.append(word)
+		lines.append(wordsR)
+	# print lines
 	return lines
 
 # WORD = 'now'
@@ -53,7 +59,7 @@ def mima(MINORMAX, val, given):
 			given = val 
 	return given
 
-def getContext(word, data, windowSize):
+def getContext(word, data, windowSize, par='default'):
 	"""
 	Args:
 		word: input word whose context is returned 
@@ -72,11 +78,14 @@ def getContext(word, data, windowSize):
 				# print data[line][i]
 				if data[line][i] not in stopWords and data[line][i] != word:
 					# contexts[data[line][i]] += 1
-					contexts[data[line][i]] += 1
+					if par == 'default':
+						contexts[data[line][i]] += 1
+					elif par == 'bool':
+						contexts[data[line][i]] = 1
 	# return sorted(contexts.items(), key=operator.itemgetter(1), reverse=True)
 	return contexts
 
-def cosSim(contexts1, contexts2, word1, word2):
+def cosSim(word1, word2, par):
 	"""
 	Args:
 		contexts1: contexts of word to be compared with contexts of another word
@@ -86,6 +95,10 @@ def cosSim(contexts1, contexts2, word1, word2):
 		cosine distributional probability of two words
 		also outputs contexts arrays to serialized.txt
 	"""
+
+	contexts1 = getContext(word1, CORPUS, WINDOW_SIZE)
+	contexts2 = getContext(word2, CORPUS, WINDOW_SIZE)
+
 	keys1=np.unique(np.array((contexts1,contexts2)).T[0])
 	keys2=np.unique(np.array((contexts1,contexts2)).T[1])
 
@@ -98,9 +111,14 @@ def cosSim(contexts1, contexts2, word1, word2):
 	all_keys=np.sort(np.unique(np.append(keys1, keys2)))
 
 	# print all_keys
-
-	array1=np.array([[i,ppmi(contexts1, getContext(i, CORPUS, WINDOW_SIZE), word1, i)] for i in all_keys])
-	array2=np.array([[i,ppmi(contexts2, getContext(i, CORPUS, WINDOW_SIZE), word2, i)] for i in all_keys])
+	if par is 'ppmi':
+		array1=np.array([[i,ppmi(contexts1, getContext(i, CORPUS, WINDOW_SIZE), word1, i)] for i in all_keys])
+		array2=np.array([[i,ppmi(contexts2, getContext(i, CORPUS, WINDOW_SIZE), word2, i)] for i in all_keys])
+	elif par is 'freq':
+		array1=np.array([[i,contexts1.get(i,0)] for i in all_keys])
+		array2=np.array([[i,contexts2.get(i,0)] for i in all_keys])
+	else:
+		return 'ERROR'
 
 	print contexts1, "\n", contexts2
 	print array1, "\n", array2
@@ -193,15 +211,40 @@ def ppmi(contexts1, contexts2, word1, word2):
 		return 0
 	return out
 
+def formalize():
+	all_words = defaultdict(lambda: 0)
+	for line in range(0, len(CORPUS)):
+		for word in range(0, len(CORPUS[line])):
+			all_words[CORPUS[line][word]] += 1
+	all_words_sorted = sorted(all_words.items(), key=operator.itemgetter(1), reverse=True)
+
+	with open('contexts.cols', 'w') as raw:
+		for word in range(0, len(all_words_sorted)):
+			raw.write(all_words_sorted[word][0] + '\n')
+
+	with open('targets.rows', 'w') as raw:
+		for word in range(0, 20):
+			raw.write(all_words_sorted[word][0] + '\n')
+
+	with open('target_context_count.sm', 'w') as raw:
+		raw.write('target_word\tcontext_word\tcount')
+
+		# print getContext(all_words_sorted[1][0], CORPUS, WINDOW_SIZE)[all_words_sorted[4][0]]
+		# getContext(all_words_sorted[1][0], CORPUS, WINDOW_SIZE)[all_words_sorted[target][1]]
+
+		for target in range(0, 20):
+			for context in range(0, len(all_words_sorted)):
+				context_ = getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE)[all_words_sorted[context][0]]
+				if context_ > 2:
+					raw.write('{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0],context_))
+
 def main(argv):
 
-	word1 = "city"
-	word2 = "london"
-
-	contexts1 = getContext(word1, CORPUS, WINDOW_SIZE)
-	contexts2 = getContext(word2, CORPUS, WINDOW_SIZE)
+	word1 = "he"
+	word2 = "she"
 	
-	print cosSim(contexts1, contexts2, word1, word2)
+	# print cosSim(word1, word2, 'freq')
+	formalize()
 
 	# print ppmi(getContext('', CORPUS, WINDOW_SIZE), getContext('dog', CORPUS, WINDOW_SIZE), 'cat', 'dog')
 
