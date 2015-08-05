@@ -1,5 +1,10 @@
 word1	word2	freq	bin	ppmi
-man	man	1.0	1.0	1.0
-man	dog	0.209722853117	0.117600115791	0.0707772788132
-dog	man	0.209722853117	0.117600115791	0.0707772788132
-dog	dog	1.0	1.0	1.0
+school	school	1.0	1.0	1.0
+school	back	0.829261402467	0.245999260548	0.103149025169
+school	ppmi	nan	nan	nan
+back	school	0.829261402467	0.245999260548	0.103149025169
+back	back	1.0	1.0	1.0
+back	ppmi	nan	nan	nan
+ppmi	school	nan	nan	nan
+ppmi	back	nan	nan	nan
+ppmi	ppmi	nan	nan	nan

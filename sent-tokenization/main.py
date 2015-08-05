@@ -5,6 +5,8 @@ import numpy as np
 import scipy.sparse
 import sys, getopt
 import math
+from progressbar import ProgressBar
+import os
 
 np.set_printoptions(threshold=np.nan)
 
@@ -230,7 +232,7 @@ def formalize():
 		for word in range(0, len(CORPUS[line])):
 			all_words[CORPUS[line][word]] += 1
 	all_words_sorted = sorted(all_words.items(), key=operator.itemgetter(1), reverse=True)
-	print all_words_sorted
+	# print all_words_sorted
 	with open('contexts.cols', 'w') as raw:
 		for word in range(0, len(all_words_sorted)):
 			# print all_words_sorted[word][0]
@@ -243,11 +245,16 @@ def formalize():
 	with open('target_context_count.sm', 'w') as raw:
 		raw.write('target_word\tcontext_word\tcount\n')
 		for target in range(0, 10):
+			pbar = ProgressBar(maxval = len(all_words_sorted)).start()
 			for context in range(0, len(all_words_sorted)):
+				# print all_words_sorted[target]
+				pbar.update(context+1)
 				context_ = getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE)[all_words_sorted[context][0]]
 				if context_ > 2:
-					print all_words_sorted[context]
+					# print all_words_sorted[context]
 					raw.write('{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0],context_))
+				# print('\n')
+			pbar.finish()
 
 def printCosSim(words):
 	with open('cosSim.txt', 'w') as raw:
