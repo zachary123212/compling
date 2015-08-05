@@ -10,7 +10,7 @@ np.set_printoptions(threshold=np.nan)
 
 stopWords = open('stop-words.txt').read().split()
 
-WINDOW_SIZE = 4
+WINDOW_SIZE = 10
 
 def getLines(file):
 	"""
@@ -28,7 +28,7 @@ def getLines(file):
 	for sent in range(0, len(sents)):
 		exclude = set(string.punctuation)
 		sents[sent] = ''.join(ch for ch in sents[sent] if ch not in exclude)
-		words = sents[sent].split()
+		words = sents[sent][26:].split()
 		wordsR = []
 		for word in words:
 			if word not in stopWords:
@@ -39,7 +39,7 @@ def getLines(file):
 
 # WORD = 'now'
 
-CORPUS = getLines('corpus.txt')
+CORPUS = getLines('corpora/tweet.SARCASM.lovely.TRAIN')
 
 def mima(MINORMAX, val, given):
 	"""
@@ -230,21 +230,23 @@ def formalize():
 		for word in range(0, len(CORPUS[line])):
 			all_words[CORPUS[line][word]] += 1
 	all_words_sorted = sorted(all_words.items(), key=operator.itemgetter(1), reverse=True)
-
+	print all_words_sorted
 	with open('contexts.cols', 'w') as raw:
 		for word in range(0, len(all_words_sorted)):
+			# print all_words_sorted[word][0]
 			raw.write(all_words_sorted[word][0] + '\n')
 
 	with open('targets.rows', 'w') as raw:
-		for word in range(0, 20):
+		for word in range(0, 10):
 			raw.write(all_words_sorted[word][0] + '\n')
 
 	with open('target_context_count.sm', 'w') as raw:
 		raw.write('target_word\tcontext_word\tcount\n')
-		for target in range(0, 20):
+		for target in range(0, 10):
 			for context in range(0, len(all_words_sorted)):
 				context_ = getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE)[all_words_sorted[context][0]]
 				if context_ > 2:
+					print all_words_sorted[context]
 					raw.write('{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0],context_))
 
 def printCosSim(words):
@@ -266,9 +268,9 @@ def main(argv):
 
 	# print cosSim(word1, word2, 'ppmi')
 
-	printCosSim(['man', 'dog'])
+	# printCosSim(['man', 'dog'])
 
-	# formalize()
+	formalize()
 
 	# print ppmi(getContext('', CORPUS, WINDOW_SIZE), getContext('dog', CORPUS, WINDOW_SIZE), 'cat', 'dog')
 
