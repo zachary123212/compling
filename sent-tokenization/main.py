@@ -112,16 +112,25 @@ def cosSim(word1, word2, par):
 
 	# print all_keys
 	if par is 'ppmi':
-		array1=np.array([[i,ppmi(contexts1, getContext(i, CORPUS, WINDOW_SIZE), word1, i)] for i in all_keys])
-		array2=np.array([[i,ppmi(contexts2, getContext(i, CORPUS, WINDOW_SIZE), word2, i)] for i in all_keys])
+		array1=np.array([[i,ppmi(getContext(i, CORPUS, WINDOW_SIZE), contexts1, i, word1)] for i in all_keys])
+		array2=np.array([[i,ppmi(getContext(i, CORPUS, WINDOW_SIZE), contexts2, i, word2)] for i in all_keys])
 	elif par is 'freq':
 		array1=np.array([[i,contexts1.get(i,0)] for i in all_keys])
 		array2=np.array([[i,contexts2.get(i,0)] for i in all_keys])
+	elif par is 'bin':
+		array1=np.array([[i,contexts1.get(i,0)] for i in all_keys])
+		for i in range(0, len(array1)):
+			if array1[i][1].astype(int) > 1:
+				array1[i][1] = 1
+		array2=np.array([[i,contexts2.get(i,0)] for i in all_keys])
+		for i in range(0, len(array2)):
+			if array2[i][1].astype(int) > 1:
+				array2[i][1] = 1
 	else:
 		return 'ERROR'
 
-	print contexts1, "\n", contexts2
-	print array1, "\n", array2
+	# print contexts1, "\n", contexts2
+	# print array1, "\n", array2
 
 	array1_i = np.array([i[1] for i in array1], dtype=float)
 	array2_i = np.array([i[1] for i in array2], dtype=float)
@@ -175,7 +184,7 @@ def ppmi(contexts1, contexts2, word1, word2):
 	# print wc
 	keys1=np.unique(np.array((contexts1,contexts2)).T[0])
 	keys2=np.unique(np.array((contexts1,contexts2)).T[1])
-	
+
 	all_keys=np.sort(np.unique(np.append(keys1, keys2)))
 
 	# print all_keys
@@ -202,10 +211,14 @@ def ppmi(contexts1, contexts2, word1, word2):
 	# print wordCount(word1, CORPUS)
 	# print wc
 
-	if array2_i[np.searchsorted(all_keys, word1)]*wc == 0:
+	num = np.nonzero(all_keys == word1)[0]
+	if num.size == 0:
 		return 0
 
-	out = math.log((array2_i[np.searchsorted(all_keys, word1)]*wc)/((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS))), 2)
+	if array2_i[np.searchsorted(all_keys, word1)] == 0:
+		return 0
+
+	out = math.log((array2_i[num]*wc)/((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS))), 2)
 
 	if out < 0:
 		return 0
@@ -227,24 +240,35 @@ def formalize():
 			raw.write(all_words_sorted[word][0] + '\n')
 
 	with open('target_context_count.sm', 'w') as raw:
-		raw.write('target_word\tcontext_word\tcount')
-
-		# print getContext(all_words_sorted[1][0], CORPUS, WINDOW_SIZE)[all_words_sorted[4][0]]
-		# getContext(all_words_sorted[1][0], CORPUS, WINDOW_SIZE)[all_words_sorted[target][1]]
-
+		raw.write('target_word\tcontext_word\tcount\n')
 		for target in range(0, 20):
 			for context in range(0, len(all_words_sorted)):
 				context_ = getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE)[all_words_sorted[context][0]]
 				if context_ > 2:
 					raw.write('{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0],context_))
 
+def printCosSim(words):
+	with open('cosSim.txt', 'w') as raw:
+		raw.write('word1\tword2\tfreq\tbin\tppmi\n')
+		for wordT in words:
+			for wordC in words:
+				raw.write('{}\t{}\t{}\t{}\t{}\n'.format(wordT, wordC, cosSim(wordT, wordC, 'freq'), cosSim(wordT, wordC, 'bin'), cosSim(wordT, wordC, 'ppmi')))
+				# raw.write('{}\t{}\t{}\t{}\t{}\n'.format('wordT', 'wordC', 'cosSim(wordT, wordC,)', 'cosSim(wordT, wordC,)', 'cosSim(wordT, wordC,)'))
+
+
 def main(argv):
 
-	word1 = "he"
-	word2 = "she"
-	
-	# print cosSim(word1, word2, 'freq')
-	formalize()
+	word1 = "man"
+	word2 = "dog"
+
+
+	# print ppmi(getContext('cat', CORPUS, WINDOW_SIZE), getContext('among', CORPUS, WINDOW_SIZE), 'cat', 'among')
+
+	# print cosSim(word1, word2, 'ppmi')
+
+	printCosSim(['man', 'dog'])
+
+	# formalize()
 
 	# print ppmi(getContext('', CORPUS, WINDOW_SIZE), getContext('dog', CORPUS, WINDOW_SIZE), 'cat', 'dog')
 

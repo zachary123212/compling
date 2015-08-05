@@ -1,4 +1,5 @@
-target_word	context_word	countsaid	mr	118
+target_word	context_word	count
+said	mr	118
 said	one	20
 said	lorry	13
 said	defarge	70
