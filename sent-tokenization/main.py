@@ -30,7 +30,7 @@ def getLines(file):
 	for sent in range(0, len(sents)):
 		exclude = set(string.punctuation)
 		sents[sent] = ''.join(ch for ch in sents[sent] if ch not in exclude)
-		words = sents[sent][26:].split()
+		words = sents[sent].split()
 		wordsR = []
 		for word in words:
 			if word not in stopWords:
@@ -41,7 +41,7 @@ def getLines(file):
 
 # WORD = 'now'
 
-CORPUS = getLines('corpora/tweet.SARCASM.lovely.TRAIN')
+CORPUS = getLines('corpus.txt')
 
 def mima(MINORMAX, val, given):
 	"""
@@ -259,10 +259,13 @@ def formalize():
 def printCosSim(words):
 	with open('cosSim.txt', 'w') as raw:
 		raw.write('word1\tword2\tfreq\tbin\tppmi\n')
+		# pbar = ProgressBar().start()
 		for wordT in words:
 			for wordC in words:
+				# pbar.update(wordC.T+1)
 				raw.write('{}\t{}\t{}\t{}\t{}\n'.format(wordT, wordC, cosSim(wordT, wordC, 'freq'), cosSim(wordT, wordC, 'bin'), cosSim(wordT, wordC, 'ppmi')))
 				# raw.write('{}\t{}\t{}\t{}\t{}\n'.format('wordT', 'wordC', 'cosSim(wordT, wordC,)', 'cosSim(wordT, wordC,)', 'cosSim(wordT, wordC,)'))
+		# pbar.finish()
 
 
 def main(argv):
@@ -275,7 +278,7 @@ def main(argv):
 
 	# print cosSim(word1, word2, 'ppmi')
 
-	# printCosSim(['man', 'dog'])
+	# printCosSim(['lovely', 'touser'])
 
 	formalize()
 

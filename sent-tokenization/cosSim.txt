@@ -1,10 +1,5 @@
 word1	word2	freq	bin	ppmi
-school	school	1.0	1.0	1.0
-school	back	0.829261402467	0.245999260548	0.103149025169
-school	ppmi	nan	nan	nan
-back	school	0.829261402467	0.245999260548	0.103149025169
-back	back	1.0	1.0	1.0
-back	ppmi	nan	nan	nan
-ppmi	school	nan	nan	nan
-ppmi	back	nan	nan	nan
-ppmi	ppmi	nan	nan	nan
+lovely	lovely	1.0	1.0	1.0
+lovely	touser	0.181705274132	0.577580000603	0.556291418645
+touser	lovely	0.181705274132	0.577580000603	0.556291418645
+touser	touser	1.0	1.0	1.0
