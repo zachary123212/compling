@@ -12,7 +12,7 @@ np.set_printoptions(threshold=np.nan)
 
 stopWords = open('stop-words.txt').read().split()
 
-WINDOW_SIZE = 4
+WINDOW_SIZE = 10
 
 def getLines(file):
 	"""
@@ -41,7 +41,21 @@ def getLines(file):
 
 # WORD = 'now'
 
+def sumOfCol(array):
+	val = 0
+	for row in range(0, len(array)):
+		val += array[row]
+	return val
+
+def sumOfElement(element, arrayS, arrayN):
+	val = 0
+	for row in range(0, len(arrayS)):
+		if arrayS[row] is element:
+			val += arrayN[row]
+	return val
+
 CORPUS = getLines('corpora/output.txt')
+# CORPUS = getLines('corpus.txt')
 
 def mima(MINORMAX, val, given):
 	"""
@@ -182,7 +196,7 @@ def ppmi(contexts1, contexts2, word1, word2):
 	Returns:
 		PPMI of word1, given word2
 	"""
-	wc = wordCount('\a', CORPUS)
+	# wc = sumOfCol()
 	# print wc
 	keys1=np.unique(np.array((contexts1,contexts2)).T[0])
 	keys2=np.unique(np.array((contexts1,contexts2)).T[1])
@@ -213,6 +227,8 @@ def ppmi(contexts1, contexts2, word1, word2):
 	# print wordCount(word1, CORPUS)
 	# print wc
 
+	wc = sumOfCol(array1_i)
+
 	num = np.nonzero(all_keys == word1)[0]
 	if num.size == 0:
 		return 0
@@ -220,7 +236,14 @@ def ppmi(contexts1, contexts2, word1, word2):
 	if array2_i[np.searchsorted(all_keys, word1)] == 0:
 		return 0
 
-	out = math.log((array2_i[num]*wc)/((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS))), 2)
+	# print array2_i[num]
+	# print array2_i[num]/((sumOfCol(array2_i)/(sumOfCol(array1_i)+sumOfCol(array2_i))) * (sumOfCol(array1_i)/(sumOfCol(array1_i)+sumOfCol(array2_i))))
+
+	out = math.log( array2_i[num]/((sumOfCol(array2_i)/(sumOfCol(array1_i)+sumOfCol(array2_i))) * (sumOfCol(array1_i)/(sumOfCol(array1_i)+sumOfCol(array2_i)))) ,2)
+
+	# out = math.log((array2_i[num]*wc/((sumOfElement(word1, all_keys, array1_i)+sumOfElement(word1, all_keys, array2_i))*(sumOfElement(word2, all_keys, array2_i)+sumOfElement(word2, all_keys, array_i)))), 2)
+
+	# out = math.log((array2_i[num]*wc)/((wordCount(word1, CORPUS))*(wordCount(word2, CORPUS))), 2)
 
 	if out < 0:
 		return 0
@@ -272,7 +295,10 @@ def main(argv):
 
 	word1 = "man"
 	word2 = "dog"
+	# print ppmi(getContext('man', CORPUS, WINDOW_SIZE), getContext('dog', CORPUS, WINDOW_SIZE), 'man', 'dog')
 
+	# x = np.array([1, 3, 1, 3, 2, 93, 32, 32])
+	# print np.nditer(x, 1)
 
 	# print ppmi(getContext('cat', CORPUS, WINDOW_SIZE), getContext('among', CORPUS, WINDOW_SIZE), 'cat', 'among')
 
