@@ -1,2408 +1,323 @@
-target_word	context_word	count
-said	mr	126
-said	one	28
-said	lorry	13
-said	defarge	76
-said	man	26
-said	little	21
-said	time	19
-said	now	36
-said	hand	29
-said	miss	59
-said	know	37
-said	good	32
-said	two	12
-said	like	16
-said	see	30
-said	looked	12
-said	never	11
-said	doctor	42
-said	madame	48
-said	long	14
-said	face	10
-said	old	16
-said	made	10
-said	much	15
-said	night	8
-said	way	9
-said	head	16
-said	day	13
-said	well	23
-said	say	16
-said	eyes	14
-said	great	10
-said	father	20
-said	manette	25
-said	come	22
-said	nothing	18
-said	carton	37
-said	life	12
-said	might	6
-said	pross	49
-said	many	8
-said	came	8
-said	look	11
-said	darnay	24
-said	go	21
-said	back	14
-said	away	3
-said	last	18
-said	another	6
-said	dont	24
-said	people	9
-said	young	9
-said	may	19
-said	even	4
-said	lucie	13
-said	dear	22
-said	business	12
-said	can	16
-said	think	15
-said	turned	12
-said	door	13
-said	looking	22
-said	ever	13
-said	three	10
-said	yes	17
-said	monsieur	26
-said	mind	8
-said	first	9
-said	seen	6
-said	hands	4
-said	went	6
-said	let	11
-said	cruncher	7
-said	yet	6
-said	took	9
-said	prisoner	3
-said	us	8
-said	jerry	16
-said	put	9
-said	without	6
-said	always	4
-said	stryver	28
-said	left	5
-said	monseigneur	3
-said	must	8
-said	name	11
-said	place	5
-said	sat	8
-said	sir	20
-said	still	14
-said	charles	11
-said	done	10
-said	though	14
-said	wife	11
-said	stood	4
-said	tell	10
-said	manner	13
-said	light	6
-said	take	13
-said	child	4
-said	better	10
-said	going	13
-said	asked	4
-said	knew	6
-said	years	4
-said	saw	3
-said	husband	7
-said	hope	11
-said	work	4
-said	voice	22
-said	tellsons	6
-said	got	3
-said	make	10
-said	far	4
-said	brought	5
-said	returned	3
-said	room	8
-said	poor	7
-said	marquis	23
-said	words	9
-said	friend	11
-said	moment	4
-said	sydney	22
-said	jacques	15
-said	enough	3
-said	gone	3
-said	gentleman	5
-said	side	3
-said	word	7
-said	air	5
-said	things	4
-said	lay	4
-said	woman	6
-said	round	7
-said	quite	5
-said	dead	5
-said	heard	6
-said	death	4
-said	stopped	3
-said	towards	8
-said	hair	3
-said	ask	8
-said	get	4
-said	thought	9
-said	paris	4
-said	daughter	6
-said	arm	3
-said	speak	6
-said	spy	19
-said	passed	5
-said	france	5
-said	something	10
-said	citizen	9
-said	days	3
-said	love	5
-said	anything	4
-said	half	5
-said	hold	6
-said	roads	10
-said	behind	3
-said	hour	3
-said	answered	4
-said	low	10
-said	red	3
-said	times	3
-said	answer	9
-said	hear	10
-said	question	6
-said	called	3
-said	right	5
-said	lady	7
-said	arms	4
-said	breast	4
-said	keep	6
-said	window	3
-said	opened	4
-said	new	3
-said	coming	8
-said	street	3
-said	open	3
-said	began	3
-said	thing	4
-said	hard	5
-said	usual	3
-said	brother	14
-said	case	5
-said	evremonde	4
-said	road	3
-said	believe	8
-said	english	3
-said	mender	11
-said	told	7
-said	lips	6
-said	whose	5
-said	show	5
-said	find	6
-said	almost	4
-said	indeed	7
-said	near	4
-said	repeated	3
-said	feet	4
-said	barsad	9
-said	ill	8
-said	vengeance	8
-said	give	3
-said	bad	4
-said	sound	3
-said	whether	4
-said	kept	4
-said	bed	3
-said	lost	3
-said	knitting	5
-said	doubt	4
-said	true	9
-said	moved	7
-said	secret	4
-said	often	3
-said	taking	9
-said	figure	3
-said	best	8
-said	just	4
-said	already	5
-said	short	7
-said	leave	4
-said	sure	5
-said	less	4
-said	slowly	6
-said	boy	8
-said	end	4
-said	present	3
-said	want	7
-said	remember	5
-said	guard	3
-said	care	5
-said	tomorrow	3
-said	help	5
-said	silence	3
-said	mean	6
-said	matter	3
-said	chair	6
-said	table	3
-said	fingers	3
-said	confidence	7
-said	family	4
-said	making	3
-said	ready	5
-said	call	3
-said	bear	4
-said	fellow	4
-said	rose	3
-said	really	5
-said	influence	6
-said	bring	3
-said	evening	4
-said	mine	4
-said	either	3
-said	thats	3
-said	tonight	5
-said	god	4
-said	tears	6
-said	straight	4
-said	pretty	6
-said	spoken	3
-said	defarges	3
-said	however	4
-said	honour	5
-said	tone	9
-said	gentlemen	8
-said	turning	9
-said	fine	3
-said	understand	9
-said	glass	3
-said	bent	3
-said	reason	4
-said	thank	3
-said	point	3
-said	oh	7
-said	rising	5
-said	fear	3
-said	cry	3
-said	witness	5
-said	else	3
-said	gabelle	3
-said	nephew	6
-said	wish	7
-said	steps	3
-said	smile	12
-said	dreadful	4
-said	solomon	6
-said	papers	3
-said	sister	6
-said	die	3
-said	sake	5
-said	free	3
-said	strange	3
-said	possible	3
-said	number	4
-said	length	4
-said	worth	3
-said	children	4
-said	late	3
-said	therefore	3
-said	circumstances	3
-said	friends	3
-said	cant	3
-said	ten	3
-said	wrong	6
-said	condition	3
-said	counter	4
-said	oclock	3
-said	least	6
-said	except	3
-said	drawn	3
-said	character	3
-said	touching	4
-said	pray	4
-said	surely	3
-said	drawing	3
-said	emigrant	5
-said	shaking	5
-said	stop	3
-said	tall	3
-said	stand	3
-said	opinion	3
-said	pause	3
-said	softly	4
-said	suppose	5
-said	lamp	3
-said	nose	3
-said	wanted	4
-said	mans	3
-said	laying	4
-said	certainly	3
-said	lived	3
-said	subject	4
-said	difficulty	3
-said	messenger	4
-said	hardly	3
-said	former	3
-said	comes	3
-said	twelve	3
-said	need	3
-said	wait	3
-said	shoe	3
-said	judge	3
-said	glancing	6
-said	gloomy	3
-said	darling	3
-said	punch	4
-said	elder	3
-said	trust	3
-said	uncle	8
-said	respect	3
-said	listen	5
-said	supper	3
-said	shoemaker	3
-said	ear	4
-said	prosss	3
-said	chief	3
-said	raising	5
-said	thinking	3
-said	following	3
-said	front	3
-said	shoulders	3
-said	beauvais	4
-said	cards	3
-said	expect	3
-said	rejoined	3
-said	gracious	3
-said	explain	3
-said	worthy	3
-said	eh	5
-said	happen	3
-said	earnest	3
-said	agreeable	3
-said	turnkey	3
-said	desperate	4
-said	didnt	3
-said	stopping	4
-said	pardon	5
-said	aloud	4
-said	reply	3
-said	crying	3
-said	hah	3
-said	prosperous	3
-said	cool	3
-said	subdued	3
-said	theres	4
-said	willingly	4
-said	blest	3
-said	nodding	4
-said	firmly	3
-said	hi	3
-said	squaring	4
-said	tut	3
-mr	said	128
-mr	one	15
-mr	lorry	16
-mr	defarge	5
-mr	man	6
-mr	little	9
-mr	time	9
-mr	now	23
-mr	hand	16
-mr	miss	18
-mr	know	16
-mr	good	12
-mr	two	6
-mr	like	4
-mr	see	5
-mr	looked	3
-mr	never	8
-mr	doctor	11
-mr	madame	3
-mr	long	4
-mr	face	4
-mr	old	7
-mr	much	8
-mr	night	14
-mr	way	10
-mr	head	6
-mr	day	7
-mr	well	14
-mr	say	9
-mr	eyes	4
-mr	great	4
-mr	father	7
-mr	manette	12
-mr	come	7
-mr	nothing	4
-mr	carton	11
-mr	life	6
-mr	pross	9
-mr	many	4
-mr	came	3
-mr	look	7
-mr	darnay	7
-mr	go	8
-mr	back	3
-mr	away	3
-mr	last	5
-mr	another	3
-mr	dont	13
-mr	people	3
-mr	young	8
-mr	may	8
-mr	even	7
-mr	lucie	8
-mr	dear	12
-mr	business	12
-mr	every	3
-mr	can	3
-mr	think	12
-mr	turned	9
-mr	door	5
-mr	looking	4
-mr	ever	3
-mr	three	3
-mr	yes	8
-mr	monsieur	4
-mr	mind	13
-mr	first	4
-mr	hands	5
-mr	went	4
-mr	cruncher	3
-mr	yet	4
-mr	took	4
-mr	us	5
-mr	jerry	12
-mr	put	5
-mr	without	4
-mr	always	5
-mr	stryver	9
-mr	left	5
-mr	must	5
-mr	name	5
-mr	place	5
-mr	sat	5
-mr	sir	16
-mr	still	3
-mr	charles	7
-mr	done	9
-mr	stood	4
-mr	tell	5
-mr	manner	9
-mr	dark	5
-mr	take	5
-mr	better	5
-mr	going	9
-mr	asked	8
-mr	saw	3
-mr	hope	8
-mr	voice	4
-mr	tellsons	6
-mr	house	3
-mr	got	3
-mr	make	4
-mr	far	4
-mr	brought	4
-mr	returned	6
-mr	room	4
-mr	poor	5
-mr	words	3
-mr	friend	7
-mr	taken	5
-mr	sydney	6
-mr	enough	5
-mr	gone	5
-mr	gentleman	3
-mr	heart	3
-mr	word	3
-mr	things	4
-mr	quite	7
-mr	towards	3
-mr	ask	3
-mr	get	3
-mr	thought	5
-mr	daughter	3
-mr	speak	4
-mr	spy	5
-mr	corner	4
-mr	something	4
-mr	half	4
-mr	hour	4
-mr	answered	7
-mr	alone	3
-mr	wineshop	3
-mr	hear	3
-mr	called	3
-mr	lady	5
-mr	bank	4
-mr	coming	3
-mr	began	3
-mr	hard	3
-mr	usual	5
-mr	believe	3
-mr	cried	6
-mr	told	4
-mr	carried	4
-mr	indeed	3
-mr	repeated	3
-mr	barsad	3
-mr	ill	4
-mr	sound	3
-mr	lost	3
-mr	doubt	3
-mr	true	3
-mr	taking	4
-mr	best	3
-mr	leave	3
-mr	sure	4
-mr	o	4
-mr	next	4
-mr	courtyard	3
-mr	mean	5
-mr	chair	3
-mr	making	3
-mr	call	3
-mr	fellow	3
-mr	really	5
-mr	turn	3
-mr	thats	3
-mr	god	3
-mr	happy	3
-mr	pretty	4
-mr	tone	3
-mr	bar	3
-mr	understand	5
-mr	thank	5
-mr	bench	3
-mr	oh	9
-mr	rising	3
-mr	lord	4
-mr	past	4
-mr	wish	3
-mr	possible	3
-mr	worth	3
-mr	pursued	4
-mr	therefore	4
-mr	attention	3
-mr	remarkable	3
-mr	pray	3
-mr	soho	4
-mr	play	3
-mr	suppose	4
-mr	curious	3
-mr	exclaimed	3
-mr	angry	3
-mr	ghost	3
-mr	bless	3
-mr	clear	3
-mr	attorneygeneral	3
-mr	offer	3
-mr	note	3
-mr	learned	4
-mr	ancient	3
-mr	agitation	3
-mr	prosperous	3
-mr	months	3
-mr	nonsense	3
-mr	forbid	3
-mr	tut	3
-mr	doorkeeper	3
-one	said	28
-one	mr	15
-one	lorry	11
-one	defarge	24
-one	man	27
-one	little	24
-one	time	18
-one	now	14
-one	hand	16
-one	miss	7
-one	know	7
-one	good	6
-one	two	29
-one	like	14
-one	see	8
-one	looked	19
-one	never	14
-one	doctor	9
-one	madame	11
-one	long	9
-one	face	15
-one	old	18
-one	made	16
-one	much	9
-one	night	12
-one	way	21
-one	head	13
-one	day	19
-one	well	7
-one	say	12
-one	eyes	10
-one	great	13
-one	father	3
-one	manette	4
-one	come	5
-one	nothing	9
-one	carton	5
-one	life	8
-one	might	13
-one	pross	4
-one	many	15
-one	came	8
-one	look	6
-one	darnay	7
-one	go	5
-one	back	5
-one	away	7
-one	last	10
-one	another	40
-one	dont	5
-one	people	7
-one	young	6
-one	may	12
-one	even	12
-one	lucie	3
-one	dear	6
-one	business	4
-one	every	22
-one	can	15
-one	think	7
-one	turned	8
-one	door	9
-one	looking	11
-one	ever	15
-one	three	19
-one	yes	4
-one	monsieur	6
-one	first	7
-one	seen	6
-one	hands	11
-one	went	8
-one	let	8
-one	cruncher	3
-one	yet	8
-one	took	4
-one	prisoner	8
-one	us	7
-one	jerry	4
-one	put	9
-one	among	15
-one	without	9
-one	always	7
-one	left	11
-one	monseigneur	8
-one	must	9
-one	name	9
-one	place	4
-one	sat	7
-one	still	5
-one	charles	6
-one	though	8
-one	wife	8
-one	stood	7
-one	manner	3
-one	dark	8
-one	men	11
-one	light	3
-one	take	3
-one	better	4
-one	going	7
-one	asked	5
-one	knew	8
-one	years	5
-one	saw	6
-one	work	9
-one	voice	7
-one	tellsons	5
-one	house	6
-one	got	3
-one	make	10
-one	brought	3
-one	returned	3
-one	room	12
-one	poor	9
-one	marquis	3
-one	friend	3
-one	streets	9
-one	taken	6
-one	sydney	4
-one	jacques	18
-one	enough	3
-one	gentleman	4
-one	heart	3
-one	side	11
-one	word	8
-one	air	7
-one	things	3
-one	woman	9
-one	round	9
-one	quite	3
-one	within	6
-one	heard	5
-one	strong	5
-one	prison	8
-one	death	7
-one	stopped	4
-one	towards	4
-one	hair	3
-one	together	5
-one	ask	3
-one	get	5
-one	thought	3
-one	paris	5
-one	found	5
-one	daughter	5
-one	arm	7
-one	seemed	7
-one	speak	4
-one	passed	6
-one	home	5
-one	corner	4
-one	saint	4
-one	citizen	4
-one	days	5
-one	known	5
-one	love	5
-one	anything	8
-one	half	6
-one	held	4
-one	hold	8
-one	roads	5
-one	hour	3
-one	morning	4
-one	struck	6
-one	red	3
-one	laid	4
-one	alone	6
-one	times	4
-one	close	6
-one	answer	4
-one	wineshop	3
-one	question	7
-one	breast	5
-one	stone	5
-one	court	4
-one	village	4
-one	window	6
-one	opened	7
-one	new	5
-one	coming	6
-one	street	7
-one	antoine	3
-one	set	3
-one	thing	7
-one	hard	3
-one	usual	3
-one	brother	4
-one	case	4
-one	english	3
-one	cried	3
-one	mender	5
-one	lips	5
-one	whose	5
-one	show	3
-one	find	5
-one	carried	5
-one	near	4
-one	barsad	3
-one	walked	3
-one	give	5
-one	bad	3
-one	dropped	4
-one	rather	5
-one	wall	7
-one	whether	3
-one	rest	3
-one	small	4
-one	hundred	23
-one	lost	4
-one	mother	5
-one	four	7
-one	knitting	7
-one	high	9
-one	observed	5
-one	moved	3
-one	secret	7
-one	taking	3
-one	coach	7
-one	figure	10
-one	spoke	4
-one	best	4
-one	crowd	6
-one	sight	3
-one	just	4
-one	fountain	6
-one	already	3
-one	kind	4
-one	since	4
-one	heads	6
-one	less	4
-one	slowly	5
-one	city	3
-one	large	5
-one	five	9
-one	end	3
-one	water	5
-one	horses	5
-one	present	3
-one	next	3
-one	sun	3
-one	year	12
-one	across	5
-one	guard	7
-one	heaven	4
-one	help	6
-one	followed	4
-one	sometimes	4
-one	eye	3
-one	fingers	4
-one	letter	3
-one	republic	6
-one	confidence	3
-one	bear	3
-one	shadow	5
-one	expression	4
-one	really	4
-one	sea	3
-one	either	5
-one	pass	3
-one	became	3
-one	happy	3
-one	course	5
-one	cold	3
-one	force	3
-one	general	3
-one	public	4
-one	appearance	3
-one	closed	3
-one	also	4
-one	echoes	3
-one	ran	3
-one	windows	5
-one	means	3
-one	fast	3
-one	forward	5
-one	london	3
-one	gave	3
-one	glass	5
-one	bright	3
-one	thousand	12
-one	mail	5
-one	point	3
-one	lord	3
-one	power	4
-one	cap	3
-one	smile	4
-one	dress	3
-one	used	4
-one	solomon	3
-one	seven	12
-one	aside	3
-one	creature	4
-one	person	5
-one	rooms	4
-one	free	3
-one	number	8
-one	foot	4
-one	fancy	3
-one	floor	3
-one	shut	3
-one	living	3
-one	stones	4
-one	sky	3
-one	breath	4
-one	wore	3
-one	soldiers	3
-one	entered	3
-one	died	4
-one	several	3
-one	except	3
-one	footsteps	3
-one	drawn	4
-one	liberty	4
-one	sitting	3
-one	account	3
-one	bell	3
-one	wot	4
-one	north	8
-one	stop	3
-one	idea	4
-one	blue	4
-one	stand	3
-one	customers	4
-one	innocent	4
-one	play	3
-one	line	3
-one	knitted	4
-one	whisper	4
-one	finger	3
-one	lighted	3
-one	miserable	3
-one	steady	3
-one	dover	3
-one	although	3
-one	heap	3
-one	promise	8
-one	passengers	6
-one	patriots	4
-one	pride	3
-one	tower	8
-one	spare	3
-one	houses	3
-one	everybody	4
-one	putting	4
-one	week	6
-one	keeping	3
-one	suspected	5
-one	noble	3
-one	filled	3
-one	leaning	4
-one	letters	4
-one	coat	3
-one	greatest	3
-one	watching	4
-one	lights	3
-one	silently	4
-one	cards	3
-one	marriage	3
-one	knee	4
-one	attached	4
-one	wound	3
-one	inclination	3
-one	tending	3
-one	leisurely	3
-one	hanged	3
-one	equality	3
-one	fraternity	3
-one	seventyfive	5
-one	indivisible	5
-one	tricoloured	3
-one	dingy	3
-one	conspicuous	3
-one	sick	3
-lorry	said	13
-lorry	mr	16
-lorry	one	11
-lorry	defarge	7
-lorry	man	6
-lorry	little	12
-lorry	time	6
-lorry	now	7
-lorry	hand	16
-lorry	miss	15
-lorry	know	4
-lorry	good	6
-lorry	two	5
-lorry	see	4
-lorry	looked	11
-lorry	doctor	13
-lorry	long	5
-lorry	face	7
-lorry	old	6
-lorry	made	4
-lorry	much	4
-lorry	night	6
-lorry	way	7
-lorry	head	8
-lorry	eyes	3
-lorry	great	4
-lorry	father	3
-lorry	manette	12
-lorry	come	5
-lorry	nothing	4
-lorry	carton	3
-lorry	life	3
-lorry	pross	11
-lorry	came	6
-lorry	look	13
-lorry	darnay	4
-lorry	go	6
-lorry	back	8
-lorry	away	4
-lorry	last	4
-lorry	another	6
-lorry	young	7
-lorry	may	3
-lorry	lucie	8
-lorry	dear	8
-lorry	business	10
-lorry	can	3
-lorry	think	3
-lorry	door	5
-lorry	looking	8
-lorry	yes	4
-lorry	monsieur	5
-lorry	mind	3
-lorry	first	3
-lorry	seen	4
-lorry	hands	6
-lorry	went	9
-lorry	took	6
-lorry	prisoner	3
-lorry	jerry	4
-lorry	without	4
-lorry	stryver	5
-lorry	left	5
-lorry	must	5
-lorry	name	5
-lorry	sat	6
-lorry	still	3
-lorry	charles	4
-lorry	though	5
-lorry	stood	4
-lorry	tell	4
-lorry	manner	5
-lorry	men	3
-lorry	take	4
-lorry	better	4
-lorry	asked	7
-lorry	knew	5
-lorry	years	7
-lorry	saw	9
-lorry	work	5
-lorry	voice	4
-lorry	tellsons	10
-lorry	house	7
-lorry	got	4
-lorry	make	3
-lorry	brought	3
-lorry	returned	3
-lorry	room	4
-lorry	words	4
-lorry	friend	6
-lorry	streets	3
-lorry	taken	4
-lorry	gone	3
-lorry	gentleman	10
-lorry	word	3
-lorry	round	4
-lorry	quite	3
-lorry	towards	4
-lorry	ask	4
-lorry	thought	4
-lorry	found	3
-lorry	daughter	3
-lorry	arm	9
-lorry	passed	4
-lorry	held	4
-lorry	red	3
-lorry	answer	3
-lorry	question	3
-lorry	right	4
-lorry	prisoners	3
-lorry	lady	5
-lorry	bank	5
-lorry	window	4
-lorry	open	3
-lorry	usual	3
-lorry	case	4
-lorry	english	3
-lorry	almost	3
-lorry	repeated	4
-lorry	walked	3
-lorry	ill	3
-lorry	rather	3
-lorry	doubt	3
-lorry	observed	3
-lorry	moved	3
-lorry	spoke	4
-lorry	just	4
-lorry	quiet	3
-lorry	remember	4
-lorry	chair	3
-lorry	eye	3
-lorry	doctors	3
-lorry	honour	3
-lorry	tone	3
-lorry	forward	3
-lorry	shoulder	3
-lorry	felt	5
-lorry	late	4
-lorry	jarvis	17
-lorry	shaking	4
-lorry	group	3
-lorry	soho	3
-lorry	opinion	4
-lorry	glanced	4
-lorry	anxious	5
-lorry	troubled	3
-lorry	laying	3
-lorry	wig	5
-lorry	counsel	3
-lorry	quietly	3
-lorry	questions	3
-lorry	manettes	3
-lorry	absent	3
-lorry	detected	3
-defarge	said	76
-defarge	mr	5
-defarge	one	25
-defarge	lorry	7
-defarge	man	8
-defarge	little	17
-defarge	time	8
-defarge	now	9
-defarge	hand	15
-defarge	miss	9
-defarge	know	5
-defarge	good	15
-defarge	two	13
-defarge	like	5
-defarge	see	16
-defarge	looked	15
-defarge	never	8
-defarge	doctor	5
-defarge	madame	114
-defarge	long	9
-defarge	face	6
-defarge	old	3
-defarge	made	3
-defarge	much	6
-defarge	way	8
-defarge	head	11
-defarge	day	8
-defarge	well	11
-defarge	say	5
-defarge	eyes	10
-defarge	father	4
-defarge	manette	3
-defarge	come	4
-defarge	nothing	10
-defarge	pross	7
-defarge	many	4
-defarge	came	7
-defarge	look	4
-defarge	go	5
-defarge	back	6
-defarge	last	5
-defarge	another	4
-defarge	may	3
-defarge	even	3
-defarge	dear	5
-defarge	business	3
-defarge	every	4
-defarge	can	5
-defarge	turned	6
-defarge	door	11
-defarge	looking	9
-defarge	ever	4
-defarge	three	13
-defarge	yes	5
-defarge	monsieur	35
-defarge	first	7
-defarge	seen	4
-defarge	hands	6
-defarge	went	7
-defarge	let	4
-defarge	took	12
-defarge	prisoner	4
-defarge	put	5
-defarge	among	3
-defarge	without	4
-defarge	always	3
-defarge	must	5
-defarge	name	11
-defarge	place	3
-defarge	sat	4
-defarge	still	8
-defarge	wife	23
-defarge	stood	8
-defarge	tell	3
-defarge	manner	4
-defarge	dark	4
-defarge	men	3
-defarge	light	4
-defarge	take	5
-defarge	child	5
-defarge	better	3
-defarge	asked	10
-defarge	knew	5
-defarge	saw	4
-defarge	husband	13
-defarge	work	3
-defarge	voice	6
-defarge	make	3
-defarge	brought	3
-defarge	returned	10
-defarge	words	3
-defarge	friend	4
-defarge	streets	10
-defarge	moment	4
-defarge	jacques	24
-defarge	enough	4
-defarge	side	3
-defarge	word	6
-defarge	woman	4
-defarge	wine	10
-defarge	heard	3
-defarge	stopped	3
-defarge	towards	3
-defarge	daughter	3
-defarge	seemed	5
-defarge	spy	3
-defarge	something	3
-defarge	saint	5
-defarge	citizen	6
-defarge	held	5
-defarge	roads	5
-defarge	behind	4
-defarge	answered	3
-defarge	morning	3
-defarge	low	3
-defarge	answer	4
-defarge	wineshop	16
-defarge	called	3
-defarge	right	4
-defarge	stone	3
-defarge	keep	3
-defarge	antoine	5
-defarge	set	3
-defarge	began	4
-defarge	usual	4
-defarge	evremonde	5
-defarge	english	3
-defarge	cried	4
-defarge	mender	5
-defarge	indeed	3
-defarge	french	3
-defarge	repeated	3
-defarge	walked	4
-defarge	vengeance	9
-defarge	rather	3
-defarge	along	4
-defarge	small	3
-defarge	mother	3
-defarge	knitting	9
-defarge	observed	3
-defarge	taking	5
-defarge	spoke	4
-defarge	short	3
-defarge	black	3
-defarge	end	3
-defarge	silence	3
-defarge	followed	3
-defarge	ground	4
-defarge	ready	4
-defarge	rose	4
-defarge	thus	5
-defarge	shadow	4
-defarge	raised	4
-defarge	defarges	5
-defarge	closed	4
-defarge	white	3
-defarge	gave	3
-defarge	bent	3
-defarge	cap	4
-defarge	remained	3
-defarge	steps	4
-defarge	smile	3
-defarge	seat	4
-defarge	knows	3
-defarge	counter	4
-defarge	immediately	3
-defarge	body	3
-defarge	spot	4
-defarge	says	3
-defarge	stop	3
-defarge	group	4
-defarge	bosom	3
-defarge	walls	3
-defarge	blue	3
-defarge	customers	4
-defarge	company	3
-defarge	knitted	5
-defarge	miserable	3
-defarge	steady	3
-defarge	nearer	7
-defarge	quarter	3
-defarge	drew	3
-defarge	nobody	3
-defarge	bread	3
-defarge	gloomy	4
-defarge	keeping	3
-defarge	listen	3
-defarge	shoemaker	3
-defarge	ear	3
-defarge	eyebrows	6
-defarge	prosss	3
-defarge	grim	3
-defarge	advanced	3
-defarge	understood	3
-defarge	drop	3
-defarge	officer	3
-defarge	toothpick	4
-defarge	composure	3
-defarge	christian	3
-defarge	threatening	3
-defarge	assented	4
-defarge	darkly	3
-defarge	cough	4
-defarge	interchange	3
-defarge	grain	3
-defarge	coughed	3
-defarge	ernest	3
-man	said	25
-man	mr	6
-man	one	24
-man	lorry	6
-man	defarge	8
-man	little	14
-man	time	8
-man	now	10
-man	hand	12
-man	miss	8
-man	know	12
-man	good	16
-man	two	5
-man	like	13
-man	see	11
-man	looked	12
-man	never	11
-man	doctor	5
-man	madame	3
-man	long	6
-man	face	18
-man	old	17
-man	made	11
-man	much	5
-man	night	7
-man	way	13
-man	head	10
-man	day	3
-man	well	7
-man	say	3
-man	eyes	11
-man	great	9
-man	father	3
-man	manette	3
-man	come	6
-man	nothing	6
-man	carton	6
-man	life	12
-man	might	4
-man	pross	5
-man	many	5
-man	came	5
-man	look	8
-man	darnay	3
-man	go	7
-man	back	7
-man	away	8
-man	another	9
-man	dont	4
-man	young	10
-man	may	5
-man	even	4
-man	dear	4
-man	business	18
-man	every	5
-man	can	5
-man	think	3
-man	turned	5
-man	door	4
-man	looking	4
-man	ever	7
-man	three	5
-man	monsieur	3
-man	mind	4
-man	first	5
-man	seen	7
-man	hands	6
-man	went	5
-man	took	4
-man	prisoner	5
-man	among	6
-man	without	9
-man	always	4
-man	stryver	4
-man	left	4
-man	monseigneur	4
-man	must	4
-man	name	3
-man	place	3
-man	sat	8
-man	still	4
-man	done	4
-man	though	5
-man	wife	6
-man	stood	6
-man	manner	6
-man	dark	4
-man	men	3
-man	light	3
-man	child	4
-man	better	6
-man	going	5
-man	asked	8
-man	knew	5
-man	years	5
-man	saw	9
-man	husband	3
-man	hope	4
-man	work	3
-man	voice	5
-man	tellsons	4
-man	got	12
-man	brought	4
-man	returned	6
-man	marquis	3
-man	friend	6
-man	taken	3
-man	moment	4
-man	sydney	4
-man	enough	3
-man	gone	5
-man	gentleman	5
-man	side	3
-man	woman	8
-man	within	3
-man	dead	4
-man	strong	6
-man	prison	5
-man	stopped	3
-man	towards	4
-man	hair	3
-man	together	3
-man	get	5
-man	paris	3
-man	found	3
-man	arm	4
-man	corner	3
-man	citizen	3
-man	days	3
-man	love	3
-man	anything	3
-man	held	3
-man	hold	3
-man	roads	6
-man	behind	4
-man	struck	5
-man	low	4
-man	red	4
-man	laid	3
-man	wineshop	4
-man	arms	5
-man	opened	6
-man	street	3
-man	set	3
-man	thing	3
-man	hard	4
-man	brother	4
-man	evremonde	7
-man	english	3
-man	mender	7
-man	whose	4
-man	show	3
-man	give	3
-man	wall	5
-man	small	5
-man	kept	3
-man	lost	6
-man	world	6
-man	secret	3
-man	spoke	3
-man	best	3
-man	fountain	3
-man	already	4
-man	kind	3
-man	whole	3
-man	across	4
-man	matter	3
-man	followed	3
-man	fingers	3
-man	confidence	3
-man	making	6
-man	ground	3
-man	call	5
-man	rose	3
-man	mine	3
-man	change	4
-man	earth	5
-man	interest	3
-man	shoes	3
-man	forward	3
-man	bench	3
-man	cap	4
-man	person	3
-man	die	3
-man	length	3
-man	mouth	3
-man	horse	3
-man	ten	3
-man	oclock	3
-man	soldiers	3
-man	aid	3
-man	silent	4
-man	sitting	3
-man	purpose	3
-man	says	3
-man	wot	5
-man	tall	10
-man	blue	4
-man	aspect	3
-man	although	3
-man	heap	3
-man	married	3
-man	angry	3
-man	bound	3
-man	meaning	3
-man	putting	3
-man	staring	4
-man	dull	3
-man	spies	3
-man	evidently	3
-man	authority	3
-man	whats	3
-man	depend	4
-man	dim	3
-man	craving	5
-man	hungry	3
-man	bold	3
-man	bloated	3
-man	whitehaired	4
-little	said	23
-little	mr	9
-little	one	25
-little	lorry	12
-little	defarge	17
-little	man	15
-little	time	9
-little	now	4
-little	hand	15
-little	miss	6
-little	know	4
-little	good	5
-little	two	13
-little	like	10
-little	see	10
-little	looked	7
-little	never	8
-little	doctor	3
-little	madame	18
-little	long	7
-little	face	7
-little	old	7
-little	made	7
-little	much	13
-little	night	9
-little	way	13
-little	head	5
-little	day	11
-little	well	7
-little	say	7
-little	eyes	9
-little	great	11
-little	father	3
-little	manette	5
-little	come	5
-little	nothing	10
-little	carton	7
-little	life	5
-little	might	11
-little	many	6
-little	came	9
-little	look	3
-little	back	8
-little	away	4
-little	last	7
-little	another	6
-little	people	3
-little	young	7
-little	even	3
-little	lucie	17
-little	dear	4
-little	every	7
-little	can	8
-little	think	3
-little	turned	7
-little	door	7
-little	looking	8
-little	ever	5
-little	three	3
-little	monsieur	7
-little	first	7
-little	seen	5
-little	hands	3
-little	went	7
-little	let	6
-little	yet	4
-little	took	11
-little	us	6
-little	put	7
-little	among	3
-little	without	4
-little	always	4
-little	stryver	3
-little	left	11
-little	monseigneur	6
-little	must	6
-little	place	5
-little	sat	3
-little	sir	4
-little	still	3
-little	charles	3
-little	done	6
-little	though	4
-little	wife	3
-little	stood	6
-little	men	3
-little	light	6
-little	child	10
-little	better	3
-little	going	3
-little	asked	4
-little	knew	3
-little	years	3
-little	saw	4
-little	husband	4
-little	hope	3
-little	work	7
-little	tellsons	7
-little	make	8
-little	brought	3
-little	room	3
-little	poor	9
-little	marquis	4
-little	friend	6
-little	gentleman	4
-little	side	4
-little	word	3
-little	air	5
-little	lay	3
-little	woman	3
-little	round	4
-little	dead	3
-little	prison	5
-little	death	3
-little	hair	4
-little	thought	3
-little	daughter	4
-little	arm	3
-little	seemed	4
-little	home	4
-little	france	3
-little	corner	3
-little	citizen	7
-little	known	3
-little	half	4
-little	soon	4
-little	held	4
-little	hold	3
-little	roads	4
-little	behind	3
-little	answered	3
-little	red	4
-little	laid	3
-little	women	5
-little	close	6
-little	lady	6
-little	arms	6
-little	village	6
-little	window	9
-little	opened	7
-little	new	4
-little	street	8
-little	brother	3
-little	mender	4
-little	lips	3
-little	whose	4
-little	show	7
-little	find	3
-little	near	4
-little	vengeance	5
-little	give	7
-little	bad	3
-little	whether	4
-little	kept	4
-little	mother	3
-little	high	5
-little	moved	4
-little	coach	3
-little	figure	3
-little	spoke	3
-little	live	3
-little	fountain	6
-little	boy	3
-little	water	4
-little	horses	5
-little	part	3
-little	chair	3
-little	sometimes	6
-little	country	3
-little	hill	3
-little	doctors	4
-little	call	3
-little	bear	7
-little	expression	3
-little	evening	3
-little	la	3
-little	earth	3
-little	happy	3
-little	tears	4
-little	spoken	3
-little	defarges	3
-little	general	4
-little	public	3
-little	shook	3
-little	closed	3
-little	golden	5
-little	also	3
-little	glass	5
-little	bright	5
-little	cap	5
-little	doors	3
-little	smile	5
-little	used	3
-little	knows	3
-little	possible	3
-little	worth	3
-little	return	3
-little	dust	3
-little	touched	4
-little	counter	6
-little	wore	3
-little	slight	3
-little	says	3
-little	group	4
-little	blue	4
-little	grass	3
-little	able	3
-little	loud	3
-little	hot	3
-little	pleasant	3
-little	weak	4
-little	pointing	3
-little	bless	3
-little	wig	7
-little	likely	3
-little	courage	3
-little	lifted	3
-little	houses	3
-little	wait	3
-little	pipe	4
-little	longer	3
-little	supper	4
-little	ease	3
-little	shoemaker	3
-little	brown	3
-little	probably	3
-little	closing	3
-little	setting	4
-little	breathing	3
-little	lights	3
-little	offer	3
-little	gentle	3
-little	pointed	3
-little	wheels	3
-little	useful	3
-little	delicacy	3
-little	brave	3
-little	leisurely	5
-little	cognac	4
-little	household	4
-little	song	3
-little	stars	3
-little	heaps	3
-time	said	18
-time	mr	9
-time	one	15
-time	lorry	6
-time	defarge	8
-time	man	8
-time	little	9
-time	now	7
-time	hand	6
-time	miss	6
-time	know	9
-time	good	6
-time	two	6
-time	like	4
-time	see	8
-time	looked	5
-time	never	11
-time	doctor	5
-time	madame	7
-time	long	41
-time	face	6
-time	old	11
-time	made	7
-time	much	6
-time	night	5
-time	way	4
-time	head	3
-time	day	6
-time	well	9
-time	say	7
-time	eyes	6
-time	great	6
-time	father	4
-time	come	14
-time	nothing	3
-time	life	7
-time	might	7
-time	pross	5
-time	many	10
-time	came	8
-time	darnay	3
-time	go	6
-time	back	6
-time	away	5
-time	last	11
-time	another	10
-time	people	4
-time	may	10
-time	even	6
-time	lucie	9
-time	dear	4
-time	business	4
-time	every	6
-time	can	6
-time	think	4
-time	turned	3
-time	door	7
-time	looking	3
-time	ever	4
-time	three	3
-time	monsieur	3
-time	mind	4
-time	first	13
-time	seen	7
-time	hands	5
-time	went	3
-time	let	3
-time	cruncher	3
-time	yet	8
-time	took	3
-time	jerry	3
-time	put	4
-time	among	3
-time	always	3
-time	left	4
-time	monseigneur	3
-time	must	5
-time	name	6
-time	place	4
-time	sat	5
-time	sir	7
-time	charles	3
-time	done	3
-time	though	5
-time	wife	3
-time	tell	6
-time	manner	4
-time	men	4
-time	light	4
-time	take	6
-time	child	5
-time	better	3
-time	knew	9
-time	years	10
-time	work	3
-time	voice	3
-time	tellsons	7
-time	house	6
-time	got	4
-time	make	3
-time	far	8
-time	brought	4
-time	marquis	4
-time	streets	3
-time	taken	4
-time	moment	3
-time	enough	5
-time	heart	3
-time	word	5
-time	things	5
-time	lay	4
-time	quite	4
-time	dead	3
-time	wine	5
-time	heard	4
-time	strong	6
-time	prison	4
-time	death	3
-time	stopped	5
-time	ask	4
-time	get	3
-time	thought	3
-time	found	5
-time	daughter	4
-time	speak	4
-time	spy	3
-time	passed	6
-time	home	3
-time	france	6
-time	known	5
-time	hour	7
-time	morning	4
-time	called	3
-time	right	3
-time	prisoners	3
-time	opened	7
-time	carriage	3
-time	new	3
-time	coming	4
-time	open	3
-time	set	5
-time	hard	3
-time	usual	4
-time	case	3
-time	indeed	3
-time	walked	3
-time	vengeance	4
-time	bad	3
-time	sound	3
-time	dropped	3
-time	whether	4
-time	rest	3
-time	hundred	3
-time	high	3
-time	live	4
-time	quiet	3
-time	short	4
-time	leave	3
-time	hours	3
-time	since	5
-time	sure	4
-time	less	4
-time	slowly	4
-time	whole	3
-time	horses	3
-time	present	4
-time	next	4
-time	across	3
-time	tomorrow	3
-time	fathers	4
-time	others	4
-time	chair	3
-time	read	3
-time	bear	4
-time	shadow	3
-time	mine	3
-time	blood	3
-time	second	5
-time	public	6
-time	ran	3
-time	means	3
-time	fast	3
-time	everything	3
-time	thousand	3
-time	minutes	3
-time	witness	3
-time	afterwards	3
-time	dreadful	3
-time	person	3
-time	rooms	3
-time	journey	3
-time	happened	4
-time	strange	3
-time	distance	3
-time	money	3
-time	twenty	4
-time	broken	3
-time	ways	5
-time	strike	3
-time	desire	3
-time	thin	4
-time	waited	3
-time	resolved	3
-time	lasted	3
-time	finish	3
-time	desperate	3
-time	lose	3
-time	employed	3
-time	result	3
-time	scarecrows	3
-time	observing	3
-time	borne	3
-now	said	39
-now	mr	23
-now	one	14
-now	lorry	7
-now	defarge	8
-now	man	10
-now	little	4
-now	time	8
-now	hand	8
-now	miss	12
-now	know	11
-now	good	10
-now	two	4
-now	see	13
-now	looked	6
-now	never	5
-now	doctor	9
-now	madame	6
-now	face	7
-now	old	11
-now	made	5
-now	much	10
-now	night	8
-now	way	7
-now	head	6
-now	day	4
-now	say	17
-now	eyes	3
-now	great	5
-now	manette	9
-now	come	8
-now	nothing	5
-now	carton	4
-now	life	5
-now	might	5
-now	pross	6
-now	many	7
-now	came	4
-now	look	7
-now	darnay	4
-now	go	8
-now	back	5
-now	last	8
-now	another	5
-now	dont	7
-now	people	4
-now	young	8
-now	may	5
-now	even	10
-now	lucie	5
-now	dear	6
-now	business	4
-now	every	3
-now	can	9
-now	think	13
-now	turned	11
-now	door	4
-now	ever	9
-now	three	3
-now	yes	5
-now	first	5
-now	seen	4
-now	hands	3
-now	let	7
-now	prisoner	4
-now	us	6
-now	put	6
-now	among	5
-now	always	9
-now	stryver	3
-now	left	5
-now	must	3
-now	place	5
-now	sir	3
-now	still	3
-now	done	6
-now	though	6
-now	wife	4
-now	stood	4
-now	tell	8
-now	take	8
-now	child	3
-now	better	4
-now	going	4
-now	asked	4
-now	knew	5
-now	years	7
-now	hope	3
-now	work	4
-now	make	5
-now	far	4
-now	brought	4
-now	marquis	3
-now	friend	4
-now	streets	7
-now	moment	4
-now	sydney	7
-now	gone	3
-now	gentleman	3
-now	air	3
-now	woman	3
-now	within	3
-now	dead	3
-now	strong	4
-now	towards	8
-now	get	4
-now	thought	4
-now	paris	4
-now	found	4
-now	arm	3
-now	seemed	3
-now	spy	3
-now	corner	3
-now	something	5
-now	soon	4
-now	held	3
-now	red	3
-now	laid	3
-now	hear	5
-now	lady	5
-now	arms	4
-now	keep	5
-now	set	3
-now	began	4
-now	believe	4
-now	english	3
-now	paper	3
-now	indeed	3
-now	feet	4
-now	barsad	3
-now	ill	3
-now	along	3
-now	mother	3
-now	moved	4
-now	taking	3
-now	coach	4
-now	best	3
-now	just	12
-now	quiet	3
-now	kind	3
-now	slowly	3
-now	boy	3
-now	city	3
-now	end	3
-now	present	3
-now	want	3
-now	o	3
-now	part	3
-now	heaven	5
-now	ago	3
-now	call	3
-now	expression	3
-now	influence	3
-now	bring	3
-now	second	3
-now	touch	4
-now	gate	3
-now	course	3
-now	force	3
-now	save	3
-now	fast	3
-now	lord	3
-now	power	4
-now	dreadful	3
-now	fallen	3
-now	foot	3
-now	pursued	3
-now	law	3
-now	thrown	3
-now	character	3
-now	worse	5
-now	pray	3
-now	stand	3
-now	grave	3
-now	comes	4
-now	step	3
-now	easily	3
-now	higher	3
-now	useless	4
-now	republican	3
-now	referred	3
-now	decree	3
-now	relations	3
-now	dig	3
-now	loo	6
-hand	said	31
-hand	mr	14
-hand	one	17
-hand	lorry	16
-hand	defarge	15
-hand	man	13
-hand	little	15
-hand	time	7
-hand	now	12
-hand	miss	4
-hand	know	6
-hand	good	3
-hand	two	12
-hand	like	5
-hand	see	6
-hand	looked	14
-hand	never	6
-hand	doctor	11
-hand	madame	11
-hand	long	4
-hand	face	13
-hand	old	7
-hand	made	5
-hand	much	5
-hand	night	3
-hand	way	6
-hand	head	5
-hand	well	4
-hand	eyes	15
-hand	father	9
-hand	manette	5
-hand	nothing	4
-hand	carton	9
-hand	life	5
-hand	might	3
-hand	many	3
-hand	came	10
-hand	look	11
-hand	darnay	8
-hand	go	3
-hand	back	11
-hand	away	7
-hand	last	6
-hand	dont	4
-hand	people	4
-hand	young	8
-hand	may	7
-hand	even	5
-hand	lucie	9
-hand	dear	4
-hand	can	4
-hand	turned	8
-hand	door	6
-hand	looking	9
-hand	ever	5
-hand	three	8
-hand	yes	3
-hand	monsieur	5
-hand	mind	3
-hand	first	4
-hand	seen	3
-hand	hands	5
-hand	went	7
-hand	let	8
-hand	took	13
-hand	prisoner	6
-hand	put	15
-hand	among	4
-hand	without	3
-hand	stryver	3
-hand	left	11
-hand	name	3
-hand	place	6
-hand	sat	5
-hand	still	8
-hand	charles	5
-hand	done	7
-hand	though	4
-hand	stood	8
-hand	manner	5
-hand	dark	3
-hand	light	5
-hand	take	3
-hand	child	3
-hand	saw	3
-hand	husband	3
-hand	work	9
-hand	voice	6
-hand	brought	3
-hand	returned	3
-hand	room	3
-hand	poor	4
-hand	words	4
-hand	streets	3
-hand	taken	4
-hand	jacques	6
-hand	heart	5
-hand	side	6
-hand	word	3
-hand	air	3
-hand	lay	4
-hand	woman	4
-hand	round	6
-hand	strong	6
-hand	stopped	4
-hand	towards	6
-hand	hair	3
-hand	together	4
-hand	arm	10
-hand	seemed	4
-hand	speak	4
-hand	passed	3
-hand	half	3
-hand	soon	5
-hand	held	6
-hand	hold	5
-hand	behind	4
-hand	answered	4
-hand	laid	12
-hand	close	6
-hand	right	15
-hand	prisoners	3
-hand	lady	4
-hand	arms	3
-hand	breast	11
-hand	window	5
-hand	opened	6
-hand	open	6
-hand	evremonde	4
-hand	road	3
-hand	cried	3
-hand	lips	11
-hand	whose	3
-hand	find	3
-hand	vengeance	4
-hand	give	4
-hand	dropped	5
-hand	wall	3
-hand	rest	3
-hand	knitting	3
-hand	moved	6
-hand	taking	4
-hand	coach	3
-hand	figure	3
-hand	spoke	3
-hand	sight	4
-hand	fountain	3
-hand	slowly	5
-hand	large	3
-hand	o	3
-hand	across	3
-hand	courtyard	3
-hand	chair	8
-hand	followed	4
-hand	eye	7
-hand	table	7
-hand	doctors	5
-hand	really	4
-hand	blood	3
-hand	raised	4
-hand	touch	5
-hand	cold	3
-hand	defarges	3
-hand	closed	4
-hand	beyond	4
-hand	understand	3
-hand	gave	4
-hand	glass	3
-hand	bent	3
-hand	cap	3
-hand	shoulder	6
-hand	smile	3
-hand	fallen	3
-hand	aside	3
-hand	happened	3
-hand	write	3
-hand	foot	3
-hand	forehead	3
-hand	action	3
-hand	caught	4
-hand	drawing	3
-hand	group	4
-hand	hurried	5
-hand	softly	4
-hand	lamp	3
-hand	intent	4
-hand	steady	4
-hand	promise	5
-hand	troubled	3
-hand	laying	6
-hand	gently	3
-hand	jackal	3
-hand	drew	3
-hand	kissed	5
-hand	shoe	4
-hand	knife	4
-hand	breathing	3
-hand	fixed	3
-hand	knee	3
-hand	clasped	3
-hand	wave	4
-hand	hollow	3
-hand	elbow	3
-hand	chin	5
-hand	cartons	4
-hand	waved	3
-hand	certificate	3
-hand	stayed	3
-hand	clenched	4
-hand	grasping	3
-hand	linked	3
+target_word	context_word	count	ppmi
+fantastic	touser	236	2.10500851174
+fantastic	day	238	2.61661291226
+fantastic	today	128	2.61570789056
+fantastic	go	105	2.40735791191
+fantastic	well	108	2.48248827279
+fantastic	start	111	2.63072289642
+fantastic	22	69	2.06240108323
+fantastic	night	77	2.47285019075
+fantastic	get	49	1.92146749379
+fantastic	great	46	2.18299122405
+fantastic	wa	56	2.48915200308
+fantastic	feel	54	2.50594724562
+fantastic	week	54	2.57870358805
+fantastic	like	41	2.18136809051
+fantastic	can	26	1.60087708563
+fantastic	love	25	1.59773281623
+fantastic	oh	39	2.26675958174
+fantastic	work	34	2.18429742155
+fantastic	morning	36	2.39229046382
+fantastic	already	39	2.60964729526
+fantastic	way	39	2.60964729526
+fantastic	fuck	40	2.64617317129
+fantastic	now	31	2.27844138679
+fantastic	year	36	2.49417007784
+fantastic	make	30	2.26675958174
+fantastic	url	26	2.06030870427
+fantastic	end	37	2.6433229332
+fantastic	fucking	36	2.60379456902
+fantastic	another	35	2.60162673233
+fantastic	absolutely	35	2.60162673233
+fantastic	wow	32	2.47234371539
+fantastic	look	29	2.4104950592
+fantastic	s	27	2.34922174193
+fantastic	mood	34	2.68179708102
+fantastic	na	29	2.49538395679
+fantastic	job	28	2.44475788372
+fantastic	gon	29	2.58558176576
+fantastic	hour	25	2.37145696041
+fantastic	really	23	2.25116272669
+fantastic	see	18	1.89752577207
+fantastic	new	22	2.23433810405
+fantastic	sleep	17	1.96190500021
+fantastic	tell	22	2.3338737776
+fantastic	top	26	2.5748818771
+fantastic	thanks	20	2.19637025385
+fantastic	one	18	2.0443671604
+fantastic	time	23	2.45047153491
+fantastic	news	24	2.5663198636
+fantastic	just	16	1.98135736288
+fantastic	monday	21	2.37367478566
+fantastic	back	12	1.62290339196
+fantastic	tomorrow	20	2.35986898613
+fantastic	break	20	2.41876267518
+fantastic	good	13	1.8586748431
+fantastic	even	15	2.12925605799
+fantastic	christmas	16	2.28947965824
+fantastic	wake	12	1.87444215896
+fantastic	school	14	2.24122448963
+fantastic	turn	16	2.43386956757
+fantastic	feeling	18	2.60379456902
+fantastic	right	14	2.24122448963
+fantastic	awesome	15	2.34076016318
+fantastic	last	13	2.13430928572
+fantastic	tonight	17	2.52133240882
+fantastic	know	16	2.43386956757
+fantastic	weekend	17	2.68179708102
+fantastic	thing	15	2.50122483538
+fantastic	play	12	2.17929674049
+fantastic	sick	9	1.76425924121
+fantastic	much	11	2.14122869966
+fantastic	cherry	15	2.58868767663
+fantastic	first	9	1.85172208246
+fantastic	friend	13	2.38223679916
+fantastic	house	14	2.48915200308
+fantastic	game	15	2.58868767663
+fantastic	weather	16	2.68179708102
+fantastic	better	11	2.23433810405
+fantastic	rain	13	2.47534620355
+fantastic	wonderful	13	2.47534620355
+fantastic	wait	8	1.87444215896
+fantastic	lol	8	1.87444215896
+fantastic	run	9	2.0443671604
+fantastic	life	13	2.68179708102
+fantastic	think	11	2.44078898151
+fantastic	say	9	2.15128236432
+fantastic	sound	12	2.5663198636
+fantastic	find	7	1.78871228493
+fantastic	service	12	2.68179708102
+fantastic	super	12	2.68179708102
+fantastic	man	9	2.26675958174
+fantastic	come	5	1.41876267518
+fantastic	keep	11	2.55626619893
+fantastic	home	8	2.0968345803
+fantastic	bus	7	1.90418950235
+fantastic	yet	8	2.22236546238
+fantastic	shit	5	1.54429355727
+fantastic	football	10	2.54429355727
+fantastic	world	7	2.02972038444
+fantastic	far	9	2.39229046382
+fantastic	everyone	10	2.54429355727
+fantastic	person	9	2.39229046382
+fantastic	next	4	1.22236546238
+fantastic	bed	5	1.54429355727
+fantastic	need	11	2.68179708102
+fantastic	class	7	2.02972038444
+fantastic	music	9	2.52979398757
+fantastic	saturday	10	2.68179708102
+fantastic	watch	6	1.94483148685
+fantastic	two	5	1.68179708102
+fantastic	birthday	8	2.35986898613
+fantastic	still	4	1.35986898613
+fantastic	season	9	2.52979398757
+fantastic	family	8	2.35986898613
+fantastic	always	9	2.52979398757
+fantastic	freak	10	2.68179708102
+fantastic	perfect	10	2.68179708102
+fantastic	give	6	2.0968345803
+fantastic	snow	7	2.31922700163
+fantastic	yes	6	2.0968345803
+fantastic	everything	4	1.51187207958
+fantastic	hear	6	2.0968345803
+fantastic	thank	3	1.0968345803
+fantastic	yeah	8	2.51187207958
+fantastic	fml	7	2.31922700163
+fantastic	drive	6	2.0968345803
+fantastic	road	8	2.51187207958
+fantastic	glad	6	2.0968345803
+fantastic	rrbnn	7	2.31922700163
+fantastic	rrb	6	2.0968345803
+fantastic	yay	4	1.51187207958
+fantastic	add	5	1.83380017446
+fantastic	tweet	6	2.26675958174
+fantastic	phone	6	2.26675958174
+fantastic	want	4	1.68179708102
+fantastic	fuckin	7	2.48915200308
+fantastic	best	4	1.68179708102
+fantastic	im	3	1.26675958174
+fantastic	boy	6	2.26675958174
+fantastic	sunday	7	2.48915200308
+fantastic	take	4	1.68179708102
+fantastic	nice	3	1.26675958174
+fantastic	late	6	2.26675958174
+fantastic	trip	8	2.68179708102
+fantastic	put	8	2.68179708102
+fantastic	help	5	2.00372517591
+fantastic	ya	6	2.26675958174
+fantastic	defense	8	2.68179708102
+fantastic	let	5	2.00372517591
+fantastic	delay	8	2.68179708102
+fantastic	walk	7	2.48915200308
+fantastic	lose	5	2.00372517591
+fantastic	never	4	1.87444215896
+fantastic	god	7	2.68179708102
+fantastic	test	4	1.87444215896
+fantastic	guy	4	1.87444215896
+fantastic	change	5	2.19637025385
+fantastic	killmenow	5	2.19637025385
+fantastic	mom	4	1.87444215896
+fantastic	stick	6	2.45940465968
+fantastic	ugh	6	2.45940465968
+fantastic	please	3	1.45940465968
+fantastic	match	6	2.45940465968
+fantastic	spend	6	2.45940465968
+fantastic	try	4	1.87444215896
+fantastic	every	4	2.0968345803
+fantastic	old	5	2.41876267518
+fantastic	must	5	2.41876267518
+fantastic	learn	4	2.0968345803
+fantastic	half	3	1.68179708102
+fantastic	seriously	5	2.41876267518
+fantastic	mean	6	2.68179708102
+fantastic	month	6	2.68179708102
+fantastic	fantasy	4	2.0968345803
+fantastic	ask	3	1.68179708102
+fantastic	miss	3	1.68179708102
+fantastic	fun	3	1.68179708102
+fantastic	d	5	2.41876267518
+fantastic	sit	4	2.0968345803
+fantastic	ll	5	2.41876267518
+fantastic	fact	4	2.0968345803
+fantastic	safe	5	2.68179708102
+fantastic	anyone	5	2.68179708102
+fantastic	listen	4	2.35986898613
+fantastic	seem	3	1.94483148685
+fantastic	annoyed	4	2.35986898613
+fantastic	result	5	2.68179708102
+fantastic	alone	5	2.68179708102
+fantastic	extra	5	2.68179708102
+fantastic	bloody	5	2.68179708102
+fantastic	live	4	2.35986898613
+fantastic	car	4	2.35986898613
+fantastic	talk	3	1.94483148685
+fantastic	place	5	2.68179708102
+fantastic	little	4	2.35986898613
+fantastic	sure	4	2.35986898613
+fantastic	show	3	1.94483148685
+fantastic	totally	4	2.35986898613
+fantastic	rest	3	1.94483148685
+fantastic	blow	5	2.68179708102
+fantastic	around	3	1.94483148685
+fantastic	stand	3	1.94483148685
+fantastic	tv	4	2.35986898613
+fantastic	song	3	1.94483148685
+fantastic	fall	4	2.35986898613
+fantastic	past	4	2.35986898613
+fantastic	public	5	2.68179708102
+fantastic	luck	5	2.68179708102
+fantastic	friday	4	2.35986898613
+fantastic	part	5	2.68179708102
+fantastic	movie	4	2.35986898613
+fantastic	referee	3	1.94483148685
+fantastic	moment	3	1.94483148685
+fantastic	eve	4	2.35986898613
+fantastic	train	5	2.68179708102
+fantastic	face	5	2.68179708102
+fantastic	hope	3	1.94483148685
+fantastic	computer	3	1.94483148685
+fantastic	usual	5	2.68179708102
+fantastic	become	5	2.68179708102
+fantastic	hair	4	2.35986898613
+fantastic	example	3	2.26675958174
+fantastic	amazing	4	2.68179708102
+fantastic	wind	3	2.26675958174
+fantastic	gym	4	2.68179708102
+fantastic	bad	3	2.26675958174
+fantastic	country	4	2.68179708102
+fantastic	kid	4	2.68179708102
+fantastic	yea	4	2.68179708102
+fantastic	note	4	2.68179708102
+fantastic	gift	4	2.68179708102
+fantastic	role	3	2.26675958174
+fantastic	icing	4	2.68179708102
+fantastic	die	4	2.68179708102
+fantastic	team	3	2.26675958174
+fantastic	open	3	2.26675958174
+fantastic	terrific	4	2.68179708102
+fantastic	evening	4	2.68179708102
+fantastic	model	3	2.26675958174
+fantastic	traffic	3	2.26675958174
+fantastic	favorite	3	2.26675958174
+fantastic	complete	4	2.68179708102
+fantastic	longer	4	2.68179708102
+fantastic	woman	3	2.26675958174
+fantastic	eye	3	2.26675958174
+fantastic	dream	4	2.68179708102
+fantastic	speaker	3	2.26675958174
+fantastic	foot	3	2.26675958174
+fantastic	idea	4	2.68179708102
+fantastic	also	3	2.26675958174
+fantastic	due	3	2.26675958174
+fantastic	ignore	4	2.68179708102
+fantastic	anything	3	2.26675958174
+fantastic	single	4	2.68179708102
+fantastic	video	3	2.26675958174
+fantastic	body	3	2.26675958174
+fantastic	thats	3	2.26675958174
+fantastic	pretty	4	2.68179708102
+fantastic	f	4	2.68179708102
+fantastic	move	3	2.26675958174
+fantastic	costume	4	2.68179708102
+fantastic	dad	3	2.26675958174
+fantastic	text	3	2.26675958174
+fantastic	timing	4	2.68179708102
+fantastic	holiday	4	2.68179708102
+fantastic	ball	3	2.26675958174
+fantastic	homework	4	2.68179708102
+fantastic	twitter	3	2.26675958174
+fantastic	cake	4	2.68179708102
+fantastic	book	3	2.26675958174
+fantastic	captain	3	2.68179708102
+fantastic	cause	3	2.68179708102
+fantastic	david	3	2.68179708102
+fantastic	crew	3	2.68179708102
+fantastic	gunna	3	2.68179708102
+fantastic	grade	3	2.68179708102
+fantastic	anxiety	3	2.68179708102
+fantastic	preparation	3	2.68179708102
+fantastic	definitely	3	2.68179708102
+fantastic	logic	3	2.68179708102
+fantastic	timehop	3	2.68179708102
+fantastic	dead	3	2.68179708102
+fantastic	roll	3	2.68179708102
+fantastic	lrb	3	2.68179708102
+fantastic	sign	3	2.68179708102
+fantastic	boost	3	2.68179708102
+fantastic	teacher	3	2.68179708102
+fantastic	write	3	2.68179708102
+fantastic	nye	3	2.68179708102
+fantastic	policy	3	2.68179708102
+fantastic	mess	3	2.68179708102
+fantastic	message	3	2.68179708102
+fantastic	plastic	3	2.68179708102
+fantastic	ridiculous	3	2.68179708102
+fantastic	reveal	3	2.68179708102
+fantastic	everyday	3	2.68179708102
+fantastic	money	3	2.68179708102
+fantastic	power	3	2.68179708102
+fantastic	mondays	3	2.68179708102
+fantastic	manager	3	2.68179708102
+fantastic	crush	3	2.68179708102
+fantastic	full	3	2.68179708102
+fantastic	sooo	3	2.68179708102
+fantastic	pissed	3	2.68179708102
+fantastic	simply	3	2.68179708102
+fantastic	leave	3	2.68179708102
+fantastic	loop	3	2.68179708102
+fantastic	y	3	2.68179708102
+fantastic	havin	3	2.68179708102
+fantastic	continue	3	2.68179708102
+fantastic	confidence	3	2.68179708102
+fantastic	customer	3	2.68179708102
+fantastic	ride	3	2.68179708102
+fantastic	halloween	3	2.68179708102
+fantastic	min	3	2.68179708102
+fantastic	semester	3	2.68179708102
+fantastic	state	3	2.68179708102
+fantastic	exam	3	2.68179708102
+fantastic	moye	3	2.68179708102
+fantastic	hahaha	3	2.68179708102
+fantastic	whore	3	2.68179708102
+fantastic	lead	3	2.68179708102
+fantastic	woohoo	3	2.68179708102

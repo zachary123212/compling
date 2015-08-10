@@ -12,7 +12,7 @@ np.set_printoptions(threshold=np.nan)
 
 stopWords = open('stop-words.txt').read().split()
 
-WINDOW_SIZE = 10
+WINDOW_SIZE = 4
 
 def getLines(file):
 	"""
@@ -41,7 +41,7 @@ def getLines(file):
 
 # WORD = 'now'
 
-CORPUS = getLines('corpus.txt')
+CORPUS = getLines('corpora/output.txt')
 
 def mima(MINORMAX, val, given):
 	"""
@@ -239,12 +239,12 @@ def formalize():
 			raw.write(all_words_sorted[word][0] + '\n')
 
 	with open('targets.rows', 'w') as raw:
-		for word in range(0, 10):
+		for word in range(0, 1):
 			raw.write(all_words_sorted[word][0] + '\n')
 
 	with open('target_context_count.sm', 'w') as raw:
-		raw.write('target_word\tcontext_word\tcount\n')
-		for target in range(0, 10):
+		raw.write('target_word\tcontext_word\tcount\tppmi\n')
+		for target in range(0, 1):
 			pbar = ProgressBar(maxval = len(all_words_sorted)).start()
 			for context in range(0, len(all_words_sorted)):
 				# print all_words_sorted[target]
@@ -252,7 +252,7 @@ def formalize():
 				context_ = getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE)[all_words_sorted[context][0]]
 				if context_ > 2:
 					# print all_words_sorted[context]
-					raw.write('{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0],context_))
+					raw.write('{}\t{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0],context_, ppmi(getContext(all_words_sorted[context][0], CORPUS, WINDOW_SIZE), getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE), all_words_sorted[context][0], all_words_sorted[target][0])))
 				# print('\n')
 			pbar.finish()
 
