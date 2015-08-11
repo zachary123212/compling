@@ -46,7 +46,6 @@ def sumOfCol(array):
 	for row in range(0, len(array)):
 		val += array[row]
 	return val
-
 def sumOfElement(element, arrayS, arrayN):
 	val = 0
 	for row in range(0, len(arrayS)):
@@ -54,8 +53,8 @@ def sumOfElement(element, arrayS, arrayN):
 			val += arrayN[row]
 	return val
 
-CORPUS = getLines('corpora/output.txt')
-# CORPUS = getLines('corpus.txt')
+# CORPUS = getLines('corpora/output.txt')
+CORPUS = getLines('corpus.txt')
 
 def mima(MINORMAX, val, given):
 	"""
@@ -74,7 +73,6 @@ def mima(MINORMAX, val, given):
 		if given > val:
 			given = val 
 	return given
-
 def getContext(word, data, windowSize, par='default'):
 	"""
 	Args:
@@ -100,7 +98,6 @@ def getContext(word, data, windowSize, par='default'):
 						contexts[data[line][i]] = 1
 	# return sorted(contexts.items(), key=operator.itemgetter(1), reverse=True)
 	return contexts
-
 def cosSim(word1, word2, par):
 	"""
 	Args:
@@ -164,8 +161,6 @@ def cosSim(word1, word2, par):
 	file1.close()
 
 	return out
-
-
 def wordCount(word, data):
 	"""
 	Args:
@@ -239,7 +234,7 @@ def ppmi(contexts1, contexts2, word1, word2):
 	# print array2_i[num]
 	# print array2_i[num]/((sumOfCol(array2_i)/(sumOfCol(array1_i)+sumOfCol(array2_i))) * (sumOfCol(array1_i)/(sumOfCol(array1_i)+sumOfCol(array2_i))))
 
-	out = math.log( array2_i[num]/((sumOfCol(array2_i)/(sumOfCol(array1_i)+sumOfCol(array2_i))) * (sumOfCol(array1_i)/(sumOfCol(array1_i)+sumOfCol(array2_i)))) ,2)
+	out = math.log( (array2_i[num])/((sumOfCol(array2_i)/(sumOfCol(array1_i)+sumOfCol(array2_i))) * (sumOfCol(array1_i)/(sumOfCol(array1_i)+sumOfCol(array2_i)))) ,2)
 
 	# out = math.log((array2_i[num]*wc/((sumOfElement(word1, all_keys, array1_i)+sumOfElement(word1, all_keys, array2_i))*(sumOfElement(word2, all_keys, array2_i)+sumOfElement(word2, all_keys, array_i)))), 2)
 
@@ -294,8 +289,8 @@ def printCosSim(words):
 def main(argv):
 
 	word1 = "man"
-	word2 = "dog"
-	# print ppmi(getContext('man', CORPUS, WINDOW_SIZE), getContext('dog', CORPUS, WINDOW_SIZE), 'man', 'dog')
+	word2 = "woman"
+	print ppmi(getContext(word1, CORPUS, WINDOW_SIZE), getContext(word2, CORPUS, WINDOW_SIZE), word1, word2)
 
 	# x = np.array([1, 3, 1, 3, 2, 93, 32, 32])
 	# print np.nditer(x, 1)
@@ -306,7 +301,7 @@ def main(argv):
 
 	# printCosSim(['lovely', 'touser'])
 
-	formalize()
+	# formalize()
 
 	# print ppmi(getContext('', CORPUS, WINDOW_SIZE), getContext('dog', CORPUS, WINDOW_SIZE), 'cat', 'dog')
 
