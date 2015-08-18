@@ -53,8 +53,8 @@ def sumOfElement(element, arrayS, arrayN):
 			val += arrayN[row]
 	return val
 
-# CORPUS = getLines('corpora/output.txt')
-CORPUS = getLines('corpus.txt')
+CORPUS = getLines('corpora/output.txt')
+# CORPUS = getLines('corpus.txt')
 
 def mima(MINORMAX, val, given):
 	"""
@@ -244,7 +244,7 @@ def ppmi(contexts1, contexts2, word1, word2):
 		return 0
 	return out
 
-def formalize():
+def formalize(sarc):
 	all_words = defaultdict(lambda: 0)
 	for line in range(0, len(CORPUS)):
 		for word in range(0, len(CORPUS[line])):
@@ -260,8 +260,8 @@ def formalize():
 		for word in range(0, 1):
 			raw.write(all_words_sorted[word][0] + '\n')
 
-	with open('target_context_count.sm', 'w') as raw:
-		raw.write('target_word\tcontext_word\tcount\tppmi\n')
+	with open('target_context_count.sm', 'a') as raw:
+		# raw.write('target_word\tcontext_word\tcount\n')
 		for target in range(0, 1):
 			pbar = ProgressBar(maxval = len(all_words_sorted)).start()
 			for context in range(0, len(all_words_sorted)):
@@ -270,7 +270,9 @@ def formalize():
 				context_ = getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE)[all_words_sorted[context][0]]
 				if context_ > 2:
 					# print all_words_sorted[context]
-					raw.write('{}\t{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0],context_, ppmi(getContext(all_words_sorted[context][0], CORPUS, WINDOW_SIZE), getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE), all_words_sorted[context][0], all_words_sorted[target][0])))
+					# raw.write('{}\t{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0],context_, ppmi(getContext(all_words_sorted[context][0], CORPUS, WINDOW_SIZE), getContext(all_words_sorted[target][0], CORPUS, WINDOW_SIZE), all_words_sorted[context][0], all_words_sorted[target][0])))
+					raw.write('{}\t{}\t{}\t{}\n'.format(all_words_sorted[target][0],all_words_sorted[context][0], context_, sarc))
+
 				# print('\n')
 			pbar.finish()
 
@@ -288,9 +290,9 @@ def printCosSim(words):
 
 def main(argv):
 
-	word1 = "man"
-	word2 = "woman"
-	print ppmi(getContext(word1, CORPUS, WINDOW_SIZE), getContext(word2, CORPUS, WINDOW_SIZE), word1, word2)
+	# word1 = "man"
+	# word2 = "woman"
+	# print ppmi(getContext(word1, CORPUS, WINDOW_SIZE), getContext(word2, CORPUS, WINDOW_SIZE), word1, word2)
 
 	# x = np.array([1, 3, 1, 3, 2, 93, 32, 32])
 	# print np.nditer(x, 1)
@@ -301,7 +303,7 @@ def main(argv):
 
 	# printCosSim(['lovely', 'touser'])
 
-	# formalize()
+	formalize(sys.argv[1])
 
 	# print ppmi(getContext('', CORPUS, WINDOW_SIZE), getContext('dog', CORPUS, WINDOW_SIZE), 'cat', 'dog')
 
