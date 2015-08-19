@@ -3,6 +3,32 @@ import numpy
 import re
 import math
 import operator
+import numpy as np
+from numpy import linalg as LA
+
+numpy.set_printoptions(threshold=numpy.nan)
+
+def cosSim(vector1, vector2, par = 'norm'):
+	all_keys = set(vector1.keys() + vector2.keys())
+
+	for key in all_keys:
+		if key not in vector1:
+			vector1[key] = 0
+		if key not in vector2:
+			vector2[key] = 0
+
+	array1 = np.array(vector1.values())
+	array2 = np.array(vector2.values())
+
+	if par is 'bin':
+		for item in range(0, len(array1)):
+			if array1[item] > 0:
+				array1[item] = 1
+		for item in range(0, len(array2)):
+			if array2[item] > 0:
+				array2[item] = 1
+
+	return np.dot(array1, array2)/(LA.norm(array1) * LA.norm(array2))
 
 def sumOfList(list):
 	sum_ = 0
@@ -57,6 +83,9 @@ sorted_genuVector = sorted(genuVector.items(), key=operator.itemgetter(1), rever
 # print sorted_sarcVector
 # print '\n\n\n\n'
 # print sorted_genuVector
+
+# print sorted_sarcVector, '\n','\n', sorted_genuVector
+print cosSim(sarcVector, genuVector, 'bin')
 
 with open('ppmiOutput.txt', 'w') as raw:
 	raw.write('{}\n{}\n\n\n{}\n{}'.format('Sarcastic', sorted_sarcVector, 'Genuine', sorted_genuVector))
