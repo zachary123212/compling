@@ -9,16 +9,25 @@ from numpy import linalg as LA
 numpy.set_printoptions(threshold=numpy.nan)
 
 def cosSim(vector1, vector2, par = 'norm'):
-	all_keys = set(vector1.keys() + vector2.keys())
-
+	values1 = []
+	values2 = []
+	all_keys = sorted(set(vector1.keys() + vector2.keys()))
+	# print all_keys
 	for key in all_keys:
 		if key not in vector1:
-			vector1[key] = 0
-		if key not in vector2:
-			vector2[key] = 0
+			values1.append(0)
+		else:
+			values1.append(vector1[key])
 
-	array1 = np.array(vector1.values())
-	array2 = np.array(vector2.values())
+		if key not in vector2:
+			values2.append(0)
+		else:
+			values2.append(vector2[key])
+
+	array1 = np.array(values1)
+	array2 = np.array(values2)
+
+	# print array1
 
 	if par is 'bin':
 		for item in range(0, len(array1)):
@@ -106,11 +115,25 @@ with open('output.txt', 'w') as raw:
 	raw.write('target1\ttarget2\tcosine_rawcount\tcosine_ppmi\tcosine_binary\n')
 	for target in sarcVectors:
 		for context in sarcVectors:
+			# print target, ' ', context, ' ', cosSim(sarcVectors[target], sarcVectors[context])
+			# print sarcVectors['fantastic']
+			# print sarcVectors['fantastic'], '\n\n', sarcVectors['sweet']
+			# print cosSim(sarcVectors['fantastic'], sarcVectors['sweet'])
+			# print cosSim(sarcVectors['sweet'], sarcVectors['fantastic'])
 			raw.write('{}_sarcastic\t{}_sarcastic\t{}\t{}\t{}\n'.format(target, context, cosSim(sarcVectorsF[target], sarcVectorsF[context]), cosSim(sarcVectors[target], sarcVectors[context]), cosSim(sarcVectors[target], sarcVectors[context], 'bin')))
 	for target in genuVectors:
 		for context in genuVectors:
-			raw.write('{}_genuine\t{}_genuine\t{}\t{}\t{}\n'.format(target, context, cosSim(sarcVectorsF[target], sarcVectorsF[context]), cosSim(sarcVectors[target], sarcVectors[context]), cosSim(sarcVectors[target], sarcVectors[context], 'bin')))
+			raw.write('{}_genuine\t{}_genuine\t{}\t{}\t{}\n'.format(target, context, cosSim(genuVectorsF[target], genuVectorsF[context]), cosSim(genuVectors[target], genuVectors[context]), cosSim(genuVectors[target], genuVectors[context], 'bin')))
 
+# print cosSim(sarcVectors['fantastic'], sarcVectors['sweet'])
+# print cosSim(sarcVectors['fantastic'], sarcVectors['sweet'])
+# print cosSim(sarcVectors['fantastic'], sarcVectors['sweet'])
+# print cosSim(sarcVectors['fantastic'], sarcVectors['sweet'])
+# print cosSim(sarcVectors['fantastic'], sarcVectors['sweet'])
+# print cosSim(sarcVectors['fantastic'], sarcVectors['sweet'])
+# print cosSim(sarcVectors['sweet'], sarcVectors['fantastic'])
+
+# print sarcVectors, '\n\n', sarcVectorsF
 
 # with open('ppmiOutput.txt', 'w') as raw:
 	# raw.write('{}\n{}\n\n\n{}\n{}'.format('Sarcastic', sorted_sarcVector, 'Genuine', sorted_genuVector))
