@@ -7,9 +7,9 @@ if [[ $1 -eq 'r' ]]; then
 	java -cp "*" -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,cleanxml -props config.properties -file tweet.txt -encoding "ascii"
 	mv tweet.txt.xml ../compling/sent-tokenization/corpora
 	cd ../compling/sent-tokenization/corpora
-	python parseXML.py
+	python parseXML.py $4 sarcastic
 	cd ..
-	python main.py sarcastic
+	# python main.py sarcastic
 	mv ./$3 tweet.txt
 	mv tweet.txt ../../stanford-corenlp
 	cd ../../stanford-corenlp
@@ -18,9 +18,9 @@ if [[ $1 -eq 'r' ]]; then
 	java -cp "*" -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,cleanxml -props config.properties -file tweet.txt -encoding "ascii"
 	mv tweet.txt.xml ../compling/sent-tokenization/corpora
 	cd ../compling/sent-tokenization/corpora
-	python parseXML.py
+	python parseXML.py $4 genuine
 	cd ..
-	python main.py genuine
+	# python main.py genuine
 else
 	echo "Place stanford-corenlp directory two directories above and rename it stanford-corenlp, then run this script with the -r parameter and the second parameter as the input file"
 fi
